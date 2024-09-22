@@ -1,0 +1,185 @@
+{
+    "profil": {
+        "nama": "Achmad Fadilah",
+        "deskripsi_1": "Programmer dengan pengalaman lebih dari 4 tahun dalam pengembangan web menggunakan PHP, Node.js, dan React.js. Memiliki minat kuat dalam UI/UX Design.",
+        "deskripsi": "<p>Halo! Saya Achmad Fadilah, seorang <b>Programmer</b> dengan pengalaman lebih dari <b>4 tahun</b> dalam pengembangan web menggunakan <b>PHP</b> dan framework <b>CodeIgniter</b>. </p><p>Saya memiliki minat kuat dalam bidang <b>UI/UX Design</b> dan telah mengembangkan kemampuan dalam <b>HTML5</b>, <b>CSS</b>, dan <b>Figma</b> untuk membuat desain antarmuka yang menarik dan user-friendly. Saat ini, saya sedang memperdalam keahlian saya dalam <b>Node.js</b> dan <b>Python</b> untuk menjadi <b>Full-Stack Developer</b> yang handal.</p>",
+        "foto": "assets/images/cv/profile_circle.png"
+    },
+    "skill": [
+        {
+            "nama": "Backend Development",
+            "icon": "fas fa-code",
+            "items": [
+                {
+                    "nama": "PHP (CodeIgniter)",
+                    "persentase": 90
+                },
+                {
+                    "nama": "Node.js",
+                    "persentase": 60
+                },
+                {
+                    "nama": "Python",
+                    "persentase": 60
+                }
+            ],
+            "deskripsi": "PHP (CodeIgniter), Node.js, Python (Django/Flask)",
+            "persentase": 90
+        },
+        {
+            "nama": "Frontend Development",
+            "icon": "fas fa-palette",
+            "items": [
+                {
+                    "nama": "HTML5",
+                    "persentase": 90
+                },
+                {
+                    "nama": "CSS3",
+                    "persentase": 80
+                },
+                {
+                    "nama": "JavaScript",
+                    "persentase": 90
+                },
+                {
+                    "nama": "React.js",
+                    "persentase": 20
+                }
+            ],
+            "deskripsi": "HTML5, CSS3, JavaScript, React.js",
+            "persentase": 75
+        },
+        {
+            "nama": "Database Management",
+            "icon": "fas fa-database",
+            "items": [
+                {
+                    "nama": "MySQL",
+                    "persentase": 90
+                },
+                {
+                    "nama": "PostgreSQL",
+                    "persentase": 0
+                },
+                {
+                    "nama": "MongoDB",
+                    "persentase": 0
+                }
+            ],
+            "deskripsi": "MySQL, MongoDB, PostgreSQL",
+            "persentase": 70
+        },
+        {
+            "nama": "UI/UX Design",
+            "icon": "fas fa-pencil-ruler",
+            "items": [
+                {
+                    "nama": "Adobe Photoshop",
+                    "persentase": 90
+                },
+                {
+                    "nama": "Adobe Illustrator",
+                    "persentase": 90
+                },
+                {
+                    "nama": "Figma",
+                    "persentase": 70
+                }
+            ],
+            "deskripsi": "Figma, Adobe Photoshop, Adobe Illustrator",
+            "persentase": 75
+        },
+        {
+            "nama": "DevOps & Tools",
+            "icon": "fas fa-tools",
+            "items": [
+                {
+                    "nama": "Git",
+                    "persentase": 70
+                },
+                {
+                    "nama": "Docker",
+                    "persentase": 0
+                },
+                {
+                    "nama": "CI/CD",
+                    "persentase": 0
+                }
+            ],
+            "deskripsi": "Git, Docker, CI/CD",
+            "persentase": 60
+        }
+    ],
+    "pengalaman_kerja": [
+        {
+            "nama_perusahaan": "PT. Asia Research Institute",
+            "tahun": "Oktober 2019 - Sekarang",
+            "posisi": "Web Developer",
+            "job_desc": "Mengembangkan dan memelihara aplikasi web menggunakan CodeIgniter, React.js, dan Node.js. Berkolaborasi dengan tim desain untuk memastikan implementasi UI/UX yang optimal."
+        },
+        {
+            "nama_perusahaan": "PT. Teleconsult Nusantara",
+            "tahun": "Mei 2017 - Desember 2019",
+            "posisi": "Multimedia",
+            "job_desc": "Mengerjakan project web dan desain foto sesuai kebutuhan perusahaan."
+        },
+        {
+            "nama_perusahaan": "PT. Bussan Auto Finance",
+            "tahun": "Mei 2018 - Agustus 2018",
+            "posisi": "Internship Graphic Design",
+            "job_desc": "Mengerjakan design dan video untuk kebutuhan perusahaan."
+        }
+    ],
+    "proyek": [
+        {
+            "judul": "Sistem Manajemen Karyawan",
+            "deskripsi": "Mengembangkan sistem manajemen karyawan dengan fitur absensi dan laporan bulanan menggunakan CodeIgniter.",
+            "link": "javascript:void(0);",
+            "gambar": "https://dummyimage.com/600x400/e0e0e0/000000.png"
+        },
+        {
+            "judul": "Platform E-Commerce",
+            "deskripsi": "Membangun platform e-commerce untuk klien retail lokal dengan manajemen inventaris dan integrasi pembayaran.",
+            "link": "javascript:void(0);",
+            "gambar": "https://dummyimage.com/600x400/e0e0e0/000000.png"
+        },
+        {
+            "judul": "Aplikasi To-Do List Full-Stack",
+            "deskripsi": "Aplikasi web full-stack sederhana menggunakan React.js dan Node.js.",
+            "link": "javascript:void(0);",
+            "gambar": "https://dummyimage.com/600x400/e0e0e0/000000.png"
+        }
+    ],
+    "cv": {
+        "deskripsi": "Unduh CV saya untuk informasi lebih lanjut mengenai pengalaman dan kualifikasi saya.",
+        "file": "assets/images/cv/CV_Achmad_Fadilah.pdf"
+    },
+    "kontak": [
+        {
+            "nama": "Email",
+            "icon": "fas fa-envelope",
+            "url": "mailto:achmadfadillah97@gmail.com"
+        },
+        {
+            "nama": "Instagram",
+            "icon": "fab fa-instagram",
+            "url": "https://www.instagram.com/achmd.fadillah"
+        },
+        {
+            "nama": "Facebook",
+            "icon": "fab fa-facebook",
+            "url": "https://www.facebook.com/achmadfadiilah"
+        },
+        {
+            "nama": "Linkedin",
+            "icon": "fab fa-linkedin",
+            "url": "https://linkedin.com/in/achmad-fadilah-217093171"
+        },
+        {
+            "nama": "Github",
+            "icon": "fab fa-github",
+            "url": "https://github.com/adilaDev"
+        }
+    ]
+}

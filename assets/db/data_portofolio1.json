@@ -1,0 +1,76 @@
+{
+    "profil": {
+        "nama": "Nama Anda",
+        "alamat": "Alamat Lengkap",
+        "telepon": "Nomor Telepon",
+        "email": "email@example.com",
+        "deskripsi": "Halo! Saya [Nama Anda], seorang *Programmer* dengan pengalaman lebih dari *4 tahun* dalam pengembangan web menggunakan *PHP* dan framework *CodeIgniter. Saya memiliki minat kuat dalam bidang **UI/UX Design* dan telah mengembangkan kemampuan dalam *HTML5, **CSS, dan **Figma* untuk membuat desain antarmuka yang menarik dan user-friendly. Saat ini, saya sedang memperdalam keahlian saya dalam *Node.js, **Python, dan **Next.js* untuk menjadi *Full-Stack Developer* yang handal.",
+        "foto": "assets/profile.jpg"
+    },
+    "skill": [
+        {
+            "nama": "Backend Development",
+            "deskripsi": "PHP (CodeIgniter), Node.js, Python (Django/Flask)",
+            "persentase": 80
+        },
+        {
+            "nama": "Frontend Development",
+            "deskripsi": "HTML5, CSS3, JavaScript, React.js, Next.js",
+            "persentase": 75
+        },
+        {
+            "nama": "Database Management",
+            "deskripsi": "MySQL, MongoDB, PostgreSQL",
+            "persentase": 70
+        },
+        {
+            "nama": "UI/UX Design",
+            "deskripsi": "Figma, Adobe XD",
+            "persentase": 65
+        },
+        {
+            "nama": "DevOps & Tools",
+            "deskripsi": "Git, Docker, CI/CD",
+            "persentase": 60
+        }
+    ],
+    "pengalaman_kerja": {
+        "Nama Perusahaan 1": [
+            {
+                "tahun": "Januari 2020 - Sekarang",
+                "posisi": "Full-stack Developer",
+                "job_desc": "Mengembangkan dan memelihara aplikasi web menggunakan *CodeIgniter, **React.js, dan **Node.js*. Berkolaborasi dengan tim desain untuk memastikan implementasi UI/UX yang optimal."
+            }
+        ],
+        "Nama Perusahaan 2": [
+            {
+                "tahun": "Mei 2018 - Desember 2019",
+                "posisi": "Backend Developer",
+                "job_desc": "Mengembangkan API dan mengelola database menggunakan *PHP* dan *MySQL*. Bertanggung jawab atas integrasi sistem dan peningkatan performa backend."
+            }
+        ]
+    },
+    "proyek": [
+        {
+            "nama": "Sistem Manajemen Karyawan",
+            "deskripsi": "Mengembangkan sistem manajemen karyawan lengkap dengan fitur absensi, penilaian kinerja, dan laporan bulanan menggunakan *CodeIgniter*. Aplikasi ini membantu perusahaan dalam mengelola karyawan secara efisien.",
+            "gambar": "assets/employee-management.jpg"
+        },
+        {
+            "nama": "Platform E-Commerce Berbasis PHP",
+            "deskripsi": "Membangun platform e-commerce untuk klien retail lokal, mencakup fitur produk, manajemen inventaris, dan integrasi gateway pembayaran dengan *CodeIgniter*.",
+            "gambar": "assets/e-commerce.jpg"
+        },
+        {
+            "nama": "Aplikasi To-Do List Full-Stack",
+            "deskripsi": "Mengembangkan aplikasi web full-stack sederhana menggunakan *React.js* dan *Node.js* yang menampilkan daftar todo dan integrasi sistem manajemen tugas.",
+            "gambar": "assets/fullstack-project.jpg"
+        }
+    ],
+    "cv": "cv/CV_NamaAnda.pdf",
+    "kontak": {
+        "github": "https://github.com/[username]",
+        "linkedin": "https://linkedin.com/in/[username]",
+        "email": "mailto:email@example.com"
+    }
+}
