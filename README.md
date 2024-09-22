@@ -1,4 +1,4 @@
-# Portofolio [Nama Anda]
+# Portofolio Achmad Fadilah
 
 Website portofolio pribadi yang menampilkan profil, skill, pengalaman kerja, proyek, dan CV saya. Dibangun menggunakan HTML, CSS, dan JavaScript dengan data yang dikelola secara semi-statis melalui file JSON.
 
@@ -21,23 +21,26 @@ Website portofolio pribadi yang menampilkan profil, skill, pengalaman kerja, pro
 
 1. Clone repository ini:
     ```bash
-    git clone https://github.com/[username]/portfolio.git
+    git clone https://github.com/adilaDev/portfolio.git
     ```
 2. Buka file `index.html` di browser favoritmu atau upload ke GitHub Pages untuk menjalankannya secara online.
 
 ## Struktur Folder
 
+```bash
 portfolio/
 │
-├── index.html
-├── styles.css
-├── scripts.js
-├── data_portofolio.json
 ├── assets/
-│   ├── profile.jpg
-│   ├── employee-management.jpg
-│   ├── e-commerce.jpg
-│   └── fullstack-project.jpg
-├── cv/
-│   └── CV_NamaAnda.pdf
+│   ├── css
+│   │   └── styles.css
+│   ├── db
+│   │   └── data_portofolio.json
+│   ├── images
+│   │   ├── cv/
+│   │   │    └── CV_Achmad_Fadilah.pdf
+│   │   └── MY_LOGO/
+│   └── js
+│       └── script.js
+├── index.html
 └── README.md
+```
