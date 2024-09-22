@@ -16,8 +16,17 @@ links.forEach(link => {
     });
 });
 
+const style = document.getElementById("dynamic_style");
+style.href = "assets/css/styles.css?v=" + new Date().getTime();
+
+const script = document.getElementById("dynamic_script");
+script.src = "assets/js/scripts.js?v=" + new Date().getTime();
+console.log("script: ", script);
+console.log("style: ", style);
+
 // Membuat konten dinamis dari data_portofolio.json
 document.addEventListener('DOMContentLoaded', () => {
+
     fetch('assets/db/data_portofolio.json?v=' + new Date().getTime())
         .then(response => response.json())
         .then(data => {
