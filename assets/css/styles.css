@@ -462,6 +462,7 @@ footer {
 
     .nav-links li {
         opacity: 0;
+        padding: 10px 0px;
     }
 
     .nav-links.active {
