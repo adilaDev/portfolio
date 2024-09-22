@@ -34,8 +34,9 @@ Website portofolio pribadi yang menampilkan profil, skill, pengalaman kerja, pro
 │   ├── db
 │   │   └── data_portofolio.json
 │   ├── images
-│   │   ├── cv/
-│   │        └── CV_Achmad_Fadilah.pdf
+│   │   └── profile_circle.png
+│   ├── cv
+│   │    └── CV_Achmad_Fadilah.pdf
 │   └── js
 │       └── script.js
 ├── index.html
