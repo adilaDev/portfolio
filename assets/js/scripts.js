@@ -18,7 +18,7 @@ links.forEach(link => {
 
 // Membuat konten dinamis dari data_portofolio.json
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('assets/db/data_portofolio.json')
+    fetch('assets/db/data_portofolio.json?v=' + new Date().getTime())
         .then(response => response.json())
         .then(data => {
             // Mengisi konten berdasarkan data dari JSON
