@@ -3,7 +3,7 @@
         "nama": "Achmad Fadilah",
         "deskripsi_1": "Programmer dengan pengalaman lebih dari 4 tahun dalam pengembangan web menggunakan PHP, Node.js, dan React.js. Memiliki minat kuat dalam UI/UX Design.",
         "deskripsi": "<p>Halo! Saya Achmad Fadilah, seorang <b>Programmer</b> dengan pengalaman lebih dari <b>4 tahun</b> dalam pengembangan web menggunakan <b>PHP</b> dan framework <b>CodeIgniter</b>. </p><p>Saya memiliki minat kuat dalam bidang <b>UI/UX Design</b> dan telah mengembangkan kemampuan dalam <b>HTML5</b>, <b>CSS</b>, dan <b>Figma</b> untuk membuat desain antarmuka yang menarik dan user-friendly. Saat ini, saya sedang memperdalam keahlian saya dalam <b>Node.js</b> dan <b>Python</b> untuk menjadi <b>Full-Stack Developer</b> yang handal.</p>",
-        "foto": "assets/images/cv/profile_circle.png"
+        "foto": "assets/images/profile_circle.png"
     },
     "skill": [
         {
@@ -153,7 +153,7 @@
     ],
     "cv": {
         "deskripsi": "Unduh CV saya untuk informasi lebih lanjut mengenai pengalaman dan kualifikasi saya.",
-        "file": "assets/images/cv/CV_Achmad_Fadilah.pdf"
+        "file": "assets/cv/CV_Achmad_Fadilah.pdf"
     },
     "kontak": [
         {
