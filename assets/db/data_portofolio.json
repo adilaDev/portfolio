@@ -15,11 +15,11 @@
                     "persentase": 100
                 },
                 {
-                    "nama": "Node.js",
-                    "persentase": 60
+                    "nama": "Python",
+                    "persentase": 80
                 },
                 {
-                    "nama": "Python",
+                    "nama": "Node.js",
                     "persentase": 60
                 }
             ],
