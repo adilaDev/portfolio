@@ -12,7 +12,7 @@
             "items": [
                 {
                     "nama": "PHP (CodeIgniter)",
-                    "persentase": 90
+                    "persentase": 100
                 },
                 {
                     "nama": "Node.js",
@@ -32,14 +32,22 @@
             "items": [
                 {
                     "nama": "HTML5",
-                    "persentase": 90
+                    "persentase": 100
                 },
                 {
                     "nama": "CSS3",
-                    "persentase": 80
+                    "persentase": 90
                 },
                 {
                     "nama": "JavaScript",
+                    "persentase": 100
+                },
+                {
+                    "nama": "jQuery",
+                    "persentase": 100
+                },
+                {
+                    "nama": "Boostrap",
                     "persentase": 90
                 },
                 {
@@ -76,11 +84,11 @@
             "items": [
                 {
                     "nama": "Adobe Photoshop",
-                    "persentase": 90
+                    "persentase": 70
                 },
                 {
                     "nama": "Adobe Illustrator",
-                    "persentase": 90
+                    "persentase": 80
                 },
                 {
                     "nama": "Figma",
@@ -96,6 +104,10 @@
             "items": [
                 {
                     "nama": "Git",
+                    "persentase": 80
+                },
+                {
+                    "nama": "Postman",
                     "persentase": 70
                 },
                 {
