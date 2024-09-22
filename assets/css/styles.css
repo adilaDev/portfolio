@@ -231,11 +231,11 @@ a{
     gap: 40px;
 }
 
-.container .proyek-content{
+/* .container .proyek-content{
     overflow-y: auto !important;
     overflow-x: hidden !important;
     max-height: 50rem;
-}
+} */
 
 .proyek-item {
     display: flex;
