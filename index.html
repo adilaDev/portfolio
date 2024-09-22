@@ -215,58 +215,6 @@
             once: true, // Animasi hanya dijalankan sekali
             mirror: false
         });
-
-        // Variabel untuk melacak posisi scroll terakhir
-        let lastScrollTop = 0;
-
-        window.addEventListener('scroll', function() {
-            // Ambil posisi scroll sekarang
-            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-            // Deteksi arah scroll
-            /*
-            if (scrollTop > lastScrollTop) {
-                // Scroll ke bawah, aktifkan animasi AOS
-                document.querySelectorAll('[data-aos]').forEach(element => {
-                    element.classList.add('aos-animate');
-                });
-            } else {
-                // Scroll ke atas, nonaktifkan animasi AOS
-                document.querySelectorAll('[data-aos]').forEach(element => {
-                    element.classList.remove('aos-animate');
-                });
-            }
-
-            // Scroll ke atas, nonaktifkan animasi AOS
-            document.querySelectorAll('[data-aos]').forEach(element => {
-                element.classList.remove('aos-animate');
-            });
-
-            if (scrollTop <= 100 || lastScrollTop <= 100) {
-                document.querySelectorAll('[data-aos]').forEach(element => {
-                    element.classList.add('aos-animate');
-                });
-            }
-            */
-
-            // Perbarui posisi scroll terakhir
-            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Pastikan tidak negatif
-
-            /*
-            console.log("scrollTop: ", scrollTop);
-            console.log("lastScrollTop: ", lastScrollTop);
-            console.log("checkScroll: ", (scrollTop <= 100 || lastScrollTop <= 100));
-            console.log("====================================");
-            */
-        });
-
-        document.addEventListener('aos:in', ({ detail }) => {
-            console.log('animated in', detail);
-        });
-
-        document.addEventListener('aos:out', ({ detail }) => {
-            console.log('animated out', detail);
-        });
     </script>
 
 </body>

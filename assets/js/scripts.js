@@ -51,7 +51,6 @@ function populateSkill(skills) {
     skills.forEach(skill => {
         const skillItem = document.createElement('div');
         skillItem.classList.add('skill-item');
-        console.log("nama: ", skill.nama);
         if (skill.nama === 'Backend Development' || skill.nama === "Frontend Development") {
             skillItem.setAttribute("data-aos", "flip-right");
         } else {
