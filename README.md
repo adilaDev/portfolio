@@ -28,8 +28,6 @@ Website portofolio pribadi yang menampilkan profil, skill, pengalaman kerja, pro
 ## Struktur Folder
 
 ```bash
-portfolio/
-│
 ├── assets/
 │   ├── css
 │   │   └── styles.css
@@ -37,8 +35,7 @@ portfolio/
 │   │   └── data_portofolio.json
 │   ├── images
 │   │   ├── cv/
-│   │   │    └── CV_Achmad_Fadilah.pdf
-│   │   └── MY_LOGO/
+│   │        └── CV_Achmad_Fadilah.pdf
 │   └── js
 │       └── script.js
 ├── index.html
