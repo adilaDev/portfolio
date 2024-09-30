@@ -20,7 +20,7 @@
                 },
                 {
                     "nama": "Node.js",
-                    "persentase": 60
+                    "persentase": 50
                 }
             ],
             "deskripsi": "PHP (CodeIgniter), Node.js, Python (Django/Flask)",
@@ -48,11 +48,7 @@
                 },
                 {
                     "nama": "Boostrap",
-                    "persentase": 90
-                },
-                {
-                    "nama": "React.js",
-                    "persentase": 20
+                    "persentase": 100
                 }
             ],
             "deskripsi": "HTML5, CSS3, JavaScript, React.js",
@@ -67,12 +63,16 @@
                     "persentase": 90
                 },
                 {
-                    "nama": "PostgreSQL",
-                    "persentase": 0
+                    "nama": "JSON",
+                    "persentase": 100
                 },
                 {
-                    "nama": "MongoDB",
-                    "persentase": 0
+                    "nama": "GeoJSON",
+                    "persentase": 100
+                },
+                {
+                    "nama": "Rest APIs",
+                    "persentase": 80
                 }
             ],
             "deskripsi": "MySQL, MongoDB, PostgreSQL",
@@ -111,12 +111,8 @@
                     "persentase": 70
                 },
                 {
-                    "nama": "Docker",
-                    "persentase": 0
-                },
-                {
-                    "nama": "CI/CD",
-                    "persentase": 0
+                    "nama": "Mapbox GL JS",
+                    "persentase": 90
                 }
             ],
             "deskripsi": "Git, Docker, CI/CD",

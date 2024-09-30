@@ -34,9 +34,19 @@ document.addEventListener('DOMContentLoaded', () => {
             populateProfil(data.profil);
             populateSkill(data.skill);
             populatePengalamanKerja(data.pengalaman_kerja);
-            populateProyek(data.proyek);
+            // populateProyek(data.proyek);
             populateCV(data.cv);
             populateKontak(data.kontak);
+        })
+        .catch((error) => {
+            console.error('Error loading portfolio data:', error);
+        });
+
+    fetch('assets/db/tb_projects.json?v=' + new Date().getTime())
+        .then(response => response.json())
+        .then(data => {
+            console.log("my_project: ", data);
+            myProjects(data.data);
         })
         .catch((error) => {
             console.error('Error loading portfolio data:', error);
@@ -50,6 +60,16 @@ function populateProfil(profil) {
         <img src="${profil.foto}" alt="Profil" width="290" height="250" class="profil-imgs">
         <div class="profil-text">
             <p>${profil.deskripsi}</p>
+            <br/>
+            <p>Berikut biodata saya, dibawah ini :</p>
+            <ul style = "list-style: none;">
+                <li>Nama Lengkap: Achmad Fadilah</li>
+                <li>Pendidikan : D3-Manajeman Informatika. Universitas Gunadarma</li>
+                <li>Tempat, Tanggal Lahir : Jakarta, 23 Juni 1997</li>
+                <li>Status : Menikah</li>
+                <li>Telepon : +6289672781297</li>
+                <li>Email : achmadfadillah97@gmail.com</li>
+            </ul>
         </div>
     `;
 }
@@ -106,6 +126,33 @@ function populatePengalamanKerja(pengalaman) {
     });
 }
 
+// Mengisi bagian Proyek
+function myProjects(project) {
+    const proyekContent = document.getElementById('proyek-content');
+    var gambar = "https://dummyimage.com/600x400/e0e0e0/000000.png";
+    gambar = "assets/images/ARI.png";
+
+    project.forEach(item => {
+        console.log("item: ", item);
+        const proyekItem = document.createElement('div');
+        proyekItem.classList.add('proyek-item');
+        proyekItem.setAttribute("data-aos", "zoom-out-up");
+        proyekItem.setAttribute("data-aos-duration", "1000");
+        proyekItem.innerHTML = `
+            <img src="${gambar}" alt="${item.project_name}" class="proyek-img">
+            <div class="proyek-text">
+                <a href="${item.link}" target="_blank"><h3><i class="bi bi-link-45deg"></i> ${item.project_name}</h3></a>
+                
+                <p>${item.keterangan}</p>
+                <div class="row">
+                    <h7>Framework yang digunakan : <b>${item.framework}</b></h7>
+                </div>
+            </div>
+        `;
+        proyekContent.appendChild(proyekItem);
+    });
+    
+}
 // Mengisi bagian Proyek
 function populateProyek(proyek) {
     const proyekContent = document.getElementById('proyek-content');
