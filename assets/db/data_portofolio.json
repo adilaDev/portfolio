@@ -99,15 +99,11 @@
             "persentase": 75
         },
         {
-            "nama": "Data Formats & Geospatial Tools",
+            "nama": "Data Formats",
             "icon": "fas fa-file-code",
             "items": [
                 {
                     "nama": "JSON",
-                    "persentase": 100
-                },
-                {
-                    "nama": "Mapbox GL JS",
                     "persentase": 100
                 },
                 {
@@ -119,7 +115,67 @@
                     "persentase": 50
                 }
             ],
-            "deskripsi": "JSON, GeoJSON, XML, Mapbox GL JS",
+            "deskripsi": "JSON, GeoJSON, XML",
+            "persentase": 60
+        },
+        {
+            "nama": "Geospatial Tools",
+            "icon": "fas fa-map-location-dot",
+            "items": [
+                {
+                    "nama": "Mapbox GL JS",
+                    "persentase": 100
+                },
+                {
+                    "nama": "Leaflet",
+                    "persentase": 70
+                },
+                {
+                    "nama": "Google Maps API",
+                    "persentase": 50
+                },
+                {
+                    "nama": "OpenStreetMap",
+                    "persentase": 40
+                },
+                {
+                    "nama": "ArcGIS",
+                    "persentase": 5
+                },
+                {
+                    "nama": "QGIS",
+                    "persentase": 5
+                }
+            ],
+            "deskripsi": "Mapbox GL JS, Leaflet, Google Maps API, OpenStreetMap, ArcGIS, QGIS",
+            "persentase": 60
+        },
+        {
+            "nama": "Data Visualization Tools",
+            "icon": "fas fa-chart-column",
+            "items": [
+                {
+                    "nama": "Chart.js",
+                    "persentase": 90
+                },
+                {
+                    "nama": "Highcharts",
+                    "persentase": 90
+                },
+                {
+                    "nama": "Plotly",
+                    "persentase": 40
+                },
+                {
+                    "nama": "Tableau",
+                    "persentase": 30
+                },
+                {
+                    "nama": "D3.js",
+                    "persentase": 20
+                }
+            ],
+            "deskripsi": "Chart.js, Highcharts, Plotly, Tableau, D3.js ",
             "persentase": 60
         },
         {
