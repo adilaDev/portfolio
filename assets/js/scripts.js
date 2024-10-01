@@ -16,16 +16,15 @@ links.forEach(link => {
     });
 });
 
-const style = document.getElementById("dynamic_style");
-style.href = "assets/css/styles.css?v=" + new Date().getTime();
-
-const script = document.getElementById("dynamic_script");
-script.src = "assets/js/scripts.js?v=" + new Date().getTime();
-console.log("script: ", script);
-console.log("style: ", style);
-
 // Membuat konten dinamis dari data_portofolio.json
 document.addEventListener('DOMContentLoaded', () => {
+    const style = document.getElementById("dynamic_style");
+    style.href = "assets/css/styles.css?v=" + new Date().getTime();
+
+    const script = document.getElementById("dynamic_script");
+    script.src = "assets/js/scripts.js?v=" + new Date().getTime();
+    console.log("script: ", script);
+    console.log("style: ", style);
 
     fetch('assets/db/data_portofolio.json?v=' + new Date().getTime())
         .then(response => response.json())
@@ -45,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('assets/db/tb_projects.json?v=' + new Date().getTime())
         .then(response => response.json())
         .then(data => {
-            console.log("my_project: ", data);
+            // console.log("my_project: ", data);
             myProjects(data.data);
         })
         .catch((error) => {
@@ -131,7 +130,6 @@ function myProjects(project) {
     gambar = "assets/images/ARI.png";
 
     project.forEach(item => {
-        console.log("item: ", item);
         const proyekItem = document.createElement('div');
         proyekItem.classList.add('proyek-item');
         proyekItem.setAttribute("data-aos", "zoom-out-up");
@@ -182,7 +180,6 @@ function populateCV(cv) {
 function populateKontak(kontak) {
     const socialLinks = document.getElementById('social-links');
     kontak.forEach((item) => {
-        console.log("item: ", item);
         var className = "";
         if (item.nama === "Email") {
             className = "btn-email";
@@ -202,7 +199,6 @@ function populateKontak(kontak) {
         if (item.nama === "Github") {
             className = "btn-github";
         }
-        console.log("className: ", className);
         const a = `
             <a href="${item.url}" class="${className}" target="_blank" >
                 <i class="${item.icon}"></i> ${item.nama}
