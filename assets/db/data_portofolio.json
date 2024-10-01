@@ -170,6 +170,11 @@
             "url": "mailto:achmadfadillah97@gmail.com"
         },
         {
+            "nama": "Telepon",
+            "icon": "fas fa-phone",
+            "url": "tel:+6289672781297"
+        },
+        {
             "nama": "Instagram",
             "icon": "fab fa-instagram",
             "url": "https://www.instagram.com/achmd.fadillah"

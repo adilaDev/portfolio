@@ -62,13 +62,11 @@ function populateProfil(profil) {
             <p>${profil.deskripsi}</p>
             <br/>
             <p>Berikut biodata saya, dibawah ini :</p>
-            <ul style = "list-style: none;">
-                <li>Nama Lengkap: Achmad Fadilah</li>
-                <li>Pendidikan : D3-Manajeman Informatika. Universitas Gunadarma</li>
+            <ul style="list-style: none;">
+                <li>Nama Lengkap : Achmad Fadilah</li>
+                <li>Nama Panggilan : Fadil</li>
                 <li>Tempat, Tanggal Lahir : Jakarta, 23 Juni 1997</li>
-                <li>Status : Menikah</li>
-                <li>Telepon : +6289672781297</li>
-                <li>Email : achmadfadillah97@gmail.com</li>
+                <li>Pendidikan Terakhir : D3-Manajeman Informatika. Universitas Gunadarma</li>
             </ul>
         </div>
     `;
@@ -145,7 +143,7 @@ function myProjects(project) {
                 
                 <p>${item.keterangan}</p>
                 <div class="row">
-                    <h7>Framework yang digunakan : <b>${item.framework}</b></h7>
+                    <h7>Tools : <b>${item.framework}</b></h7>
                 </div>
             </div>
         `;
@@ -184,8 +182,29 @@ function populateCV(cv) {
 function populateKontak(kontak) {
     const socialLinks = document.getElementById('social-links');
     kontak.forEach((item) => {
+        console.log("item: ", item);
+        var className = "";
+        if (item.nama === "Email") {
+            className = "btn-email";
+        }
+        if (item.nama === "Telepon") {
+            className = "btn-telepon";
+        }
+        if (item.nama === "Instagram") {
+            className = "btn-instagram";
+        }
+        if (item.nama === "Facebook") {
+            className = "btn-facebook";
+        }
+        if (item.nama === "Linkedin") {
+            className = "btn-linkedin";
+        }
+        if (item.nama === "Github") {
+            className = "btn-github";
+        }
+        console.log("className: ", className);
         const a = `
-            <a href="${item.url}" target="_blank">
+            <a href="${item.url}" class="${className}" target="_blank" >
                 <i class="${item.icon}"></i> ${item.nama}
             </a>`;
         socialLinks.innerHTML += a;

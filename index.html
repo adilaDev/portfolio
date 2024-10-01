@@ -36,7 +36,7 @@
                 <li><a href="#skill">Skill</a></li>
                 <li><a href="#pengalaman">Pengalaman</a></li>
                 <li><a href="#proyek">Proyek</a></li>
-                <li><a href="#cv">CV</a></li>
+                <li class="d-none"><a href="#cv">CV</a></li>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -47,9 +47,9 @@
     </header>
 
     <!-- Profil/Biodata -->
-    <section id="profil" class="section">
+    <section id="profil" class="section bg-dark-primary">
         <div class="container">
-            <h2 data-aos="fade-up" data-aos-duration="1500" style="margin-top: 1.5rem;">Profil Saya</h2>
+            <h2 data-aos="fade-up" data-aos-duration="1500" style="margin-top: 1.5rem;">Profil</h2>
             <div id="profil-content" class="profil-content" data-aos="zoom-in-up" data-aos-duration="1500">
                 <img src="assets/images/cv/profile_circle.png" width="290" height="250" alt="Profil" class="profil-imgs">
                 <div class="profil-text">
@@ -57,12 +57,22 @@
                 </div>
             </div>
         </div>
+        <div class="container">
+            <div class="cv-content" data-aos="fade-up" data-aos-duration="1500">
+                <p id="deksripsi-cv" class="d-none">Unduh CV saya untuk informasi lebih lanjut mengenai pengalaman dan kualifikasi saya.</p>
+                <a id="download-cv" href="assets/cv/CV_Achmad_Fadilah.pdf" class="btn" download>Download CV</a>
+                <h2 data-aos="zoom-in-up" class="mt-4">Social Media</h2>     
+                <a href="tel:+"></a>
+                <div id="social-links" class="social-links" data-aos="fade-up" data-aos-duration="1500"></div>
+            </div>
+
+        </div>
     </section>
 
     <!-- Skill -->
-    <section id="skill" class="section bg-light">
+    <section id="skill" class="section bg-dark-secondary">
         <div class="container">
-            <h2 data-aos="zoom-in-up" data-aos-duration="1500">Skill Saya</h2>
+            <h2 data-aos="zoom-in-up" data-aos-duration="1500">Skill</h2>
             <div id="skill-content" class="skill-content"></div>
 
             <div class="skill-content" style="display: none;">
@@ -96,7 +106,7 @@
     </section>
 
     <!-- Pengalaman Kerja -->
-    <section id="pengalaman" class="section">
+    <section id="pengalaman" class="section bg-dark-primary">
         <div class="container">
             <h2 data-aos="zoom-in-up" data-aos-duration="1500">Pengalaman Kerja</h2>
             <ul id="pengalaman-content" class="timeline-vertical"></ul>
@@ -128,9 +138,9 @@
     </section>
 
     <!-- Proyek -->
-    <section id="proyek" class="section bg-light">
+    <section id="proyek" class="section bg-dark-secondary">
         <div class="container">
-            <h2 data-aos="zoom-in" data-aos-duration="1500">Proyek Saya</h2>
+            <h2 data-aos="zoom-in" data-aos-duration="1500">Proyek</h2>
             <div id="proyek-content" class="proyek-content"></div>
             <div class="proyek-content" style="display: none;">
                 <div class="proyek-item" data-aos="fade-up" data-aos-duration="1500">
@@ -159,7 +169,7 @@
     </section>
 
     <!-- CV -->
-    <section id="cv" class="section">
+    <section id="cv" class="section bg-dark-primary d-none">
         <div class="container">
             <h2 data-aos="zoom-in-up" data-aos-duration="1500">Curriculum Vitae</h2>
             <div class="cv-content" data-aos="fade-up" data-aos-duration="1500">
