@@ -49,6 +49,10 @@
                 {
                     "nama": "Boostrap",
                     "persentase": 100
+                },
+                {
+                    "nama": "React.js",
+                    "persentase": 10
                 }
             ],
             "deskripsi": "HTML5, CSS3, JavaScript, React.js",
@@ -63,16 +67,12 @@
                     "persentase": 90
                 },
                 {
-                    "nama": "JSON",
-                    "persentase": 100
+                    "nama": "MongoDB",
+                    "persentase": 10
                 },
                 {
-                    "nama": "GeoJSON",
-                    "persentase": 100
-                },
-                {
-                    "nama": "Rest APIs",
-                    "persentase": 80
+                    "nama": "PostgreSQL",
+                    "persentase": 0
                 }
             ],
             "deskripsi": "MySQL, MongoDB, PostgreSQL",
@@ -99,6 +99,58 @@
             "persentase": 75
         },
         {
+            "nama": "Data Formats & Geospatial Tools",
+            "icon": "fas fa-file-code",
+            "items": [
+                {
+                    "nama": "JSON",
+                    "persentase": 100
+                },
+                {
+                    "nama": "Mapbox GL JS",
+                    "persentase": 100
+                },
+                {
+                    "nama": "GeoJSON",
+                    "persentase": 100
+                },
+                {
+                    "nama": "XML",
+                    "persentase": 50
+                }
+            ],
+            "deskripsi": "JSON, GeoJSON, XML, Mapbox GL JS",
+            "persentase": 60
+        },
+        {
+            "nama": "API Design & Web Services",
+            "icon": "fa fa-globe",
+            "items": [
+                {
+                    "nama": "REST",
+                    "persentase": 80
+                },
+                {
+                    "nama": "Postman",
+                    "persentase": 80
+                },
+                {
+                    "nama": "OAuth",
+                    "persentase": 60
+                },
+                {
+                    "nama": "OpenAPI",
+                    "persentase": 50
+                },
+                {
+                    "nama": "API Gateway",
+                    "persentase": 50
+                }
+            ],
+            "deskripsi": "REST, Postman, OAuth, OpenAPI, API Gateway",
+            "persentase": 60
+        },
+        {
             "nama": "DevOps & Tools",
             "icon": "fas fa-tools",
             "items": [
@@ -107,12 +159,12 @@
                     "persentase": 80
                 },
                 {
-                    "nama": "Postman",
-                    "persentase": 70
+                    "nama": "Docker",
+                    "persentase": 0
                 },
                 {
-                    "nama": "Mapbox GL JS",
-                    "persentase": 90
+                    "nama": "CI/CD",
+                    "persentase": 0
                 }
             ],
             "deskripsi": "Git, Docker, CI/CD",
