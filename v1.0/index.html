@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Achmad Fadilah</title>
+    <meta name="description" content="Portofolio Achmad Fadilah - Programmer dan UI/UX Designer dengan pengalaman dalam PHP, CodeIgniter, Node.js, dan Next.js.">
+    <meta name="keywords" content="Programmer, UI/UX Designer, PHP, CodeIgniter, Node.js, Next.js, Full-stack Developer, Portfolio">
+    <meta name="author" content="Achmad Fadilah">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+    <!-- <link rel="stylesheet" href="assets/css/styles.css?v=1.0.0"> -->
+    <link id="dynamic_style" rel="stylesheet" href="">
+
+    <!-- Google Fonts (Opsional) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome untuk Ikon (Opsional) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">
+                    <img src="assets/images/MY_LOGO/favicon_AF_gold.png" alt="Logo" width="55" height="40">
+                    <span>Achmad Fadilah</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#profil">Profil</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#pengalaman">Pengalaman</a></li>
+                <li><a href="#proyek">Proyek</a></li>
+                <li class="d-none"><a href="#cv">CV</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Profil/Biodata -->
+    <section id="profil" class="section bg-dark-primary">
+        <div class="container">
+            <h2 data-aos="fade-up" data-aos-duration="1500" style="margin-top: 1.5rem;">Profil</h2>
+            <div id="profil-content" class="profil-content" data-aos="zoom-in-up" data-aos-duration="1500">
+                <img src="https://dummyimage.com/600x400/e0e0e0/000000.png" width="290" height="250" alt="Profil" class="profil-imgs">
+                <div class="profil-text">
+                    <p id="profil-deskripsi"></p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="cv-content" data-aos="fade-up" data-aos-duration="1500">
+                <p id="deksripsi-cv" class="d-none">Unduh CV saya untuk informasi lebih lanjut mengenai pengalaman dan kualifikasi saya.</p>
+                <a id="download-cv" href="assets/cv/CV_Achmad_Fadilah.pdf" class="btn" download>Download CV</a>
+                <h2 data-aos="zoom-in-up" class="mt-4">Social Media</h2>     
+                <a href="tel:+"></a>
+                <div id="social-links" class="social-links" data-aos="fade-up" data-aos-duration="1500"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Skill -->
+    <section id="skill" class="section bg-dark-secondary">
+        <div class="container">
+            <h2 data-aos="zoom-in-up" data-aos-duration="1500">Skill</h2>
+            <div id="skill-content" class="skill-content"></div>
+
+            <div class="skill-content" style="display: none;">
+                <div class="skill-item" data-aos="flip-right" data-aos-duration="1500">
+                    <i class="fas fa-code"></i>
+                    <h3>Backend Development</h3>
+                    <p>PHP (CodeIgniter), Node.js, Python (Django/Flask)</p>
+                </div>
+                <div class="skill-item" data-aos="flip-right" data-aos-duration="1500">
+                    <i class="fas fa-palette"></i>
+                    <h3>Frontend Development</h3>
+                    <p>HTML5, CSS3, JavaScript, React.js, Next.js</p>
+                </div>
+                <div class="skill-item" data-aos="flip-left" data-aos-duration="1500">
+                    <i class="fas fa-database"></i>
+                    <h3>Database Management</h3>
+                    <p>MySQL, MongoDB, PostgreSQL</p>
+                </div>
+                <div class="skill-item" data-aos="flip-left" data-aos-duration="1500">
+                    <i class="fas fa-pencil-ruler"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Figma, Adobe XD</p>
+                </div>
+                <div class="skill-item" data-aos="fade-up" data-aos-duration="1500">
+                    <i class="fas fa-tools"></i>
+                    <h3>DevOps & Tools</h3>
+                    <p>Git, Docker, CI/CD</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pengalaman Kerja -->
+    <section id="pengalaman" class="section bg-dark-primary">
+        <div class="container">
+            <h2 data-aos="zoom-in-up" data-aos-duration="1500">Pengalaman Kerja</h2>
+            <ul id="pengalaman-content" class="timeline-vertical"></ul>
+
+
+            <div class="pengalaman-content" style="display: none;">
+                <div class="pengalaman-item" data-aos="fade-up-left" data-aos-duration="1500">
+                    <h3>Web Developer</h3>
+                    <h4>PT. Asia Research Institute</h4>
+                    <span>Oktober 2019 - Sekarang</span>
+                    <p>Mengembangkan dan memelihara aplikasi web menggunakan <b>CodeIgniter</b>, <b>React.js</b>, dan <b>Node.js</b>. Berkolaborasi dengan tim desain untuk memastikan implementasi UI/UX yang optimal.</p>
+                </div>
+                <div class="pengalaman-item" data-aos="fade-up-left" data-aos-duration="1500">
+                    <h3>Multimedia</h3>
+                    <h4>PT. Teleconsult Nusantara</h4>
+                    <span>Mei 2017 - Desember 2019</span>
+                    <p>Mengerjakan project web sesuai kebutuhan perusahaan.</p>
+                    <p>Design atau Re-design foto sesuai kebutuhan perusahaan.</p>
+                </div>
+                <div class="pengalaman-item" data-aos="fade-up-left" data-aos-duration="1500">
+                    <h3>Internship Graphic Design</h3>
+                    <h4>PT. Bussan Auto Finance</h4>
+                    <span>Mei 2018 - Agustus 2018</span>
+                    <p>Mengerjakan design sesuai kebutuhan perusahaan.</p>
+                    <p>Mengikuti proses pembuatan video. Mulai dari stroyboard, timeline, & shutting video</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyek -->
+    <section id="proyek" class="section bg-dark-secondary">
+        <div class="container">
+            <h2 data-aos="zoom-in" data-aos-duration="1500">Proyek</h2>
+            <div id="proyek-content" class="proyek-content"></div>
+            <div class="proyek-content" style="display: none;">
+                <div class="proyek-item" data-aos="fade-up" data-aos-duration="1500">
+                    <img src="https://dummyimage.com/600x400/e0e0e0/000000.png" alt="Employee Management System" class="proyek-img">
+                    <div class="proyek-text">
+                        <h3>Sistem Manajemen Karyawan</h3>
+                        <p>Mengembangkan sistem manajemen karyawan lengkap dengan fitur absensi, penilaian kinerja, dan laporan bulanan menggunakan <b>CodeIgniter<b>. Aplikasi ini membantu perusahaan dalam mengelola karyawan secara efisien.</p>
+                    </div>
+                </div>
+                <div class="proyek-item" data-aos="fade-up" data-aos-duration="1500">
+                    <img src="https://dummyimage.com/600x400/e0e0e0/000000.png" alt="E-Commerce Platform" class="proyek-img">
+                    <div class="proyek-text">
+                        <h3>Platform E-Commerce Berbasis PHP</h3>
+                        <p>Membangun platform e-commerce untuk klien retail lokal, mencakup fitur produk, manajemen inventaris, dan integrasi gateway pembayaran dengan <b>CodeIgniter<b>.</p>
+                    </div>
+                </div>
+                <div class="proyek-item" data-aos="fade-up" data-aos-duration="1500">
+                    <img src="https://dummyimage.com/600x400/e0e0e0/000000.png" alt="Full-Stack Project" class="proyek-img">
+                    <div class="proyek-text">
+                        <h3>Aplikasi To-Do List Full-Stack</h3>
+                        <p>Mengembangkan aplikasi web full-stack sederhana menggunakan <b>React.js<b> dan <b>Node.js<b> yang menampilkan daftar produk dan integrasi sistem keranjang belanja.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CV -->
+    <section id="cv" class="section bg-dark-primary d-none">
+        <div class="container">
+            <h2 data-aos="zoom-in-up" data-aos-duration="1500">Curriculum Vitae</h2>
+            <div class="cv-content" data-aos="fade-up" data-aos-duration="1500">
+                <p id="deksripsi-cv">Unduh CV saya untuk informasi lebih lanjut mengenai pengalaman dan kualifikasi saya.</p>
+                <a id="download-cv" href="assets/cv/CV_Achmad_Fadilah.pdf" class="btn" download>Download CV</a>
+            </div>
+
+            <h2 data-aos="zoom-in-up" style="margin-top: 30px; margin-bottom: 0px;">Social Media</h2>            
+            <div id="social-links" class="social-links" data-aos="fade-up" data-aos-duration="1500"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="content">
+            <p>
+                &copy; 2024 
+                <img src="assets/images/MY_LOGO/favicon_AF_white.png" alt="Logo" width="20" height="15"> Achmad Fadilah. 
+                All rights reserved.
+            </p>
+            <p>Design & Develop by <i class="fas fa-heart" style="color: red; padding: 0px 3px;"></i></p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/scripts.js?v=1.0.0"></script>
+    <script id="dynamic_script" src=""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Inisialisasi AOS
+        AOS.init({
+            startEvent: 'DOMContentLoaded',
+            initClassName: 'aos-init',
+            once: true, // Animasi hanya dijalankan sekali
+            mirror: false
+        });
+    </script>
+
+</body>
+</html>

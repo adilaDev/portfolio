@@ -1,0 +1,306 @@
+{
+    "profil": {
+        "nama": "Achmad Fadilah",
+        "deskripsi_1": "Programmer dengan pengalaman lebih dari 4 tahun dalam pengembangan web menggunakan PHP, Node.js, dan React.js. Memiliki minat kuat dalam UI/UX Design.",
+        "deskripsi": "<p>Halo! Saya Achmad Fadilah, seorang <b>Programmer</b> dengan pengalaman lebih dari <b>4 tahun</b> dalam pengembangan web menggunakan <b>PHP</b> dan framework <b>CodeIgniter</b>. </p><p>Saya memiliki minat kuat dalam bidang <b>UI/UX Design</b> dan telah mengembangkan kemampuan dalam <b>HTML5</b>, <b>CSS</b>, dan <b>Figma</b> untuk membuat desain antarmuka yang menarik dan user-friendly. Saat ini, saya sedang memperdalam keahlian saya dalam <b>Node.js</b> dan <b>Python</b> untuk menjadi <b>Full-Stack Developer</b> yang handal.</p>",
+        "foto": "assets/images/profile_circle.png"
+    },
+    "skill": [
+        {
+            "nama": "Backend Development",
+            "icon": "fas fa-code",
+            "items": [
+                {
+                    "nama": "PHP (CodeIgniter)",
+                    "persentase": 100
+                },
+                {
+                    "nama": "Python",
+                    "persentase": 80
+                },
+                {
+                    "nama": "Node.js",
+                    "persentase": 50
+                }
+            ],
+            "deskripsi": "PHP (CodeIgniter), Node.js, Python (Django/Flask)",
+            "persentase": 90
+        },
+        {
+            "nama": "Frontend Development",
+            "icon": "fas fa-palette",
+            "items": [
+                {
+                    "nama": "HTML5",
+                    "persentase": 100
+                },
+                {
+                    "nama": "CSS3",
+                    "persentase": 90
+                },
+                {
+                    "nama": "JavaScript",
+                    "persentase": 100
+                },
+                {
+                    "nama": "jQuery",
+                    "persentase": 100
+                },
+                {
+                    "nama": "Boostrap",
+                    "persentase": 100
+                },
+                {
+                    "nama": "React.js",
+                    "persentase": 10
+                }
+            ],
+            "deskripsi": "HTML5, CSS3, JavaScript, React.js",
+            "persentase": 75
+        },
+        {
+            "nama": "Database Management",
+            "icon": "fas fa-database",
+            "items": [
+                {
+                    "nama": "MySQL",
+                    "persentase": 90
+                },
+                {
+                    "nama": "MongoDB",
+                    "persentase": 10
+                },
+                {
+                    "nama": "PostgreSQL",
+                    "persentase": 0
+                }
+            ],
+            "deskripsi": "MySQL, MongoDB, PostgreSQL",
+            "persentase": 70
+        },
+        {
+            "nama": "UI/UX Design",
+            "icon": "fas fa-pencil-ruler",
+            "items": [
+                {
+                    "nama": "Adobe Photoshop",
+                    "persentase": 70
+                },
+                {
+                    "nama": "Adobe Illustrator",
+                    "persentase": 80
+                },
+                {
+                    "nama": "Figma",
+                    "persentase": 70
+                }
+            ],
+            "deskripsi": "Figma, Adobe Photoshop, Adobe Illustrator",
+            "persentase": 75
+        },
+        {
+            "nama": "Data Formats",
+            "icon": "fas fa-file-code",
+            "items": [
+                {
+                    "nama": "JSON",
+                    "persentase": 100
+                },
+                {
+                    "nama": "GeoJSON",
+                    "persentase": 100
+                },
+                {
+                    "nama": "XML",
+                    "persentase": 50
+                }
+            ],
+            "deskripsi": "JSON, GeoJSON, XML",
+            "persentase": 60
+        },
+        {
+            "nama": "Geospatial Tools",
+            "icon": "fas fa-map-location-dot",
+            "items": [
+                {
+                    "nama": "Mapbox GL JS",
+                    "persentase": 100
+                },
+                {
+                    "nama": "Leaflet",
+                    "persentase": 70
+                },
+                {
+                    "nama": "Google Maps API",
+                    "persentase": 50
+                },
+                {
+                    "nama": "OpenStreetMap",
+                    "persentase": 40
+                },
+                {
+                    "nama": "ArcGIS",
+                    "persentase": 5
+                },
+                {
+                    "nama": "QGIS",
+                    "persentase": 5
+                }
+            ],
+            "deskripsi": "Mapbox GL JS, Leaflet, Google Maps API, OpenStreetMap, ArcGIS, QGIS",
+            "persentase": 60
+        },
+        {
+            "nama": "Data Visualization Tools",
+            "icon": "fas fa-chart-column",
+            "items": [
+                {
+                    "nama": "Chart.js",
+                    "persentase": 90
+                },
+                {
+                    "nama": "Highcharts",
+                    "persentase": 90
+                },
+                {
+                    "nama": "Plotly",
+                    "persentase": 40
+                },
+                {
+                    "nama": "Tableau",
+                    "persentase": 30
+                },
+                {
+                    "nama": "D3.js",
+                    "persentase": 20
+                }
+            ],
+            "deskripsi": "Chart.js, Highcharts, Plotly, Tableau, D3.js ",
+            "persentase": 60
+        },
+        {
+            "nama": "API Design & Web Services",
+            "icon": "fa fa-globe",
+            "items": [
+                {
+                    "nama": "REST",
+                    "persentase": 80
+                },
+                {
+                    "nama": "Postman",
+                    "persentase": 80
+                },
+                {
+                    "nama": "OAuth",
+                    "persentase": 60
+                },
+                {
+                    "nama": "OpenAPI",
+                    "persentase": 50
+                },
+                {
+                    "nama": "API Gateway",
+                    "persentase": 50
+                }
+            ],
+            "deskripsi": "REST, Postman, OAuth, OpenAPI, API Gateway",
+            "persentase": 60
+        },
+        {
+            "nama": "DevOps & Tools",
+            "icon": "fas fa-tools",
+            "items": [
+                {
+                    "nama": "Git",
+                    "persentase": 80
+                },
+                {
+                    "nama": "Docker",
+                    "persentase": 0
+                },
+                {
+                    "nama": "CI/CD",
+                    "persentase": 0
+                }
+            ],
+            "deskripsi": "Git, Docker, CI/CD",
+            "persentase": 60
+        }
+    ],
+    "pengalaman_kerja": [
+        {
+            "nama_perusahaan": "PT. Asia Research Institute",
+            "tahun": "Oktober 2019 - Sekarang",
+            "posisi": "Web Developer",
+            "job_desc": "Mengembangkan dan memelihara aplikasi web menggunakan CodeIgniter 3 dan Python. Serta membuat desain web dengan Figma dan implementasi UI yang optimal dan responsif."
+        },
+        {
+            "nama_perusahaan": "PT. Teleconsult Nusantara",
+            "tahun": "Mei 2017 - Desember 2019",
+            "posisi": "Multimedia",
+            "job_desc": "Mengerjakan project web dan desain foto sesuai kebutuhan perusahaan."
+        },
+        {
+            "nama_perusahaan": "PT. Bussan Auto Finance",
+            "tahun": "Mei 2018 - Agustus 2018",
+            "posisi": "Internship Graphic Design",
+            "job_desc": "Mengerjakan design dan video untuk kebutuhan perusahaan."
+        }
+    ],
+    "proyek": [
+        {
+            "judul": "Sistem Manajemen Karyawan",
+            "deskripsi": "Mengembangkan sistem manajemen karyawan dengan fitur absensi dan laporan bulanan menggunakan CodeIgniter.",
+            "link": "javascript:void(0);",
+            "gambar": "https://dummyimage.com/600x400/e0e0e0/000000.png"
+        },
+        {
+            "judul": "Platform E-Commerce",
+            "deskripsi": "Membangun platform e-commerce untuk klien retail lokal dengan manajemen inventaris dan integrasi pembayaran.",
+            "link": "javascript:void(0);",
+            "gambar": "https://dummyimage.com/600x400/e0e0e0/000000.png"
+        },
+        {
+            "judul": "Aplikasi To-Do List Full-Stack",
+            "deskripsi": "Aplikasi web full-stack sederhana menggunakan React.js dan Node.js.",
+            "link": "javascript:void(0);",
+            "gambar": "https://dummyimage.com/600x400/e0e0e0/000000.png"
+        }
+    ],
+    "cv": {
+        "deskripsi": "Unduh CV saya untuk informasi lebih lanjut mengenai pengalaman dan kualifikasi saya.",
+        "file": "assets/cv/CV_Achmad_Fadilah.pdf"
+    },
+    "kontak": [
+        {
+            "nama": "Email",
+            "icon": "fas fa-envelope",
+            "url": "mailto:achmadfadillah97@gmail.com"
+        },
+        {
+            "nama": "Telepon",
+            "icon": "fas fa-phone",
+            "url": "tel:+6289672781297"
+        },
+        {
+            "nama": "Instagram",
+            "icon": "fab fa-instagram",
+            "url": "https://www.instagram.com/achmd.fadillah"
+        },
+        {
+            "nama": "Facebook",
+            "icon": "fab fa-facebook",
+            "url": "https://www.facebook.com/achmadfadiilah"
+        },
+        {
+            "nama": "Linkedin",
+            "icon": "fab fa-linkedin",
+            "url": "https://linkedin.com/in/achmad-fadilah-217093171"
+        },
+        {
+            "nama": "Github",
+            "icon": "fab fa-github",
+            "url": "https://github.com/adilaDev"
+        }
+    ]
+}
