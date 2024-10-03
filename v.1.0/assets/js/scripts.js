@@ -16,7 +16,7 @@ links.forEach(link => {
     });
 });
 
-// Membuat konten dinamis dari data_portofolio.json
+// Membuat konten dinamis dari data_portofolio.json 
 document.addEventListener('DOMContentLoaded', () => {
     const style = document.getElementById("dynamic_style");
     style.href = "assets/css/styles.css?v=" + new Date().getTime();
