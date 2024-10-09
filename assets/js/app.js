@@ -21,7 +21,7 @@ function changeLang(lang) {
     const selectLang = $(".selectLanguage");
     selectLang.toggleClass("active");
 
-    console.clear();
+    // console.clear();
     // console.log("onChange: ", lang);
     // console.log("selectLang: ", selectLang);
     // console.log("==============================");
@@ -72,8 +72,8 @@ function updateProfil(data, lang){
     deskripsi.innerHTML = data.deskripsi;
     my_sosmed.innerHTML = (lang == "en") ? "My Social Media" : "Media Sosial Saya";
     
-    console.log("updateProfil: ", data);
-    console.log("==============================");
+    // console.log("updateProfil: ", data);
+    // console.log("==============================");
 }
 
 function updateAbout(data) {
@@ -93,8 +93,8 @@ function updateAbout(data) {
     about_desc.innerHTML = data.deskripsi;
     download_cv.setAttribute("href", data.download_cv);
 
-    console.log("updateAbout: ", data);
-    console.log("==============================");
+    // console.log("updateAbout: ", data);
+    // console.log("==============================");
 }
 
 function updateSkill(data) {
@@ -145,8 +145,8 @@ function updateSkill(data) {
         }
     }
     
-    console.log("updateSkill: ", data);
-    console.log("==============================");
+    // console.log("updateSkill: ", data);
+    // console.log("==============================");
 }
 
 function animateBar(id, durations = 3000){
@@ -193,8 +193,8 @@ function updateExperience(data, lang) {
         content.append(listPosisi[i]);
         content.append(listDesc[i]);
     }
-    console.log("updateExperience: ", data);
-    console.log("==============================");
+    // console.log("updateExperience: ", data);
+    // console.log("==============================");
 }
 
 function updateSchool(data, lang) {
@@ -227,16 +227,16 @@ function updateSchool(data, lang) {
         listPosisi[i].innerHTML = (posisi != "") ? "<strong>" + lang_major + " :</strong> " + posisi : "<strong>" + lang_major + " :</strong> -";
         content.append(listPosisi[i]);
     }
-    console.log("updateSchool: ", data);
-    console.log("==============================");
+    // console.log("updateSchool: ", data);
+    // console.log("==============================");
 }
 
 function updateProject(data) {
     var parentElement = $(".image_load");
     parentElement.html(null);
     var childParent = parentElement.children();
-    console.log("parentElement: ", parentElement.length, parentElement);
-    console.log("childParent: ", childParent.length, childParent);
+    // console.log("parentElement: ", parentElement.length, parentElement);
+    // console.log("childParent: ", childParent.length, childParent);
     
     for (let i = 0; i < data.length; i++) {
         const item = data[i];
@@ -257,11 +257,11 @@ function updateProject(data) {
 			</div>`;
         parentElement.append(tempPorto);
     }
-    console.log("updateProject: ", data);
-    console.log("==============================");
+    // console.log("updateProject: ", data);
+    // console.log("==============================");
 }
 
 function updateContact(data) {
-    console.log("updateContact: ", data);
-    console.log("==============================");
+    // console.log("updateContact: ", data);
+    // console.log("==============================");
 }
