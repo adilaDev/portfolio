@@ -775,24 +775,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-6">
-				<!-- Table to display data -->
-				<h3 class="text-white">Data from Google Sheets</h3>
-				<table id="sheetDataTable" class="table table-responsive text-white">
-					<thead>
-						<tr class="text-white">
-							<th>Name</th>
-							<th>Phone</th>
-							<th>Email</th>
-							<th>Message</th>
-							<th>Created Date</th>
-						</tr>
-					</thead>
-					<tbody>
-					</tbody>
-				</table>
-			</div>
-			<div class="col-lg-6">
+			<div class="col-lg-12">
 				<div class="single-contact-box upper" data-cues="rotateIn">
 					<div class="contact-title">
 						<h3>Contact Us</h3>
@@ -801,22 +784,22 @@
 						<div class="row">
 							<div class="col-lg-6">
 								<div class="form_box">
-									<input type="text" name="name" id="form-name" placeholder="Name" value="Achmad Fadilah" required>
+									<input type="text" name="name" id="form-name" placeholder="Name" required>
 								</div>
 							</div>
 							<div class="col-lg-6">
 								<div class="form_box">
-									<input type="text" name="phone" id="form-phone" placeholder="Phone" value="+6289672781297" required>
+									<input type="text" name="phone" id="form-phone" placeholder="Phone" required>
 								</div>
 							</div>
 							<div class="col-lg-12">
 								<div class="form_box">
-									<input type="text" name="email" id="form-email" placeholder="Email" value="achmadfadillah97@gmail.com" required>
+									<input type="text" name="email" id="form-email" placeholder="Email" required>
 								</div>
 							</div>
 							<div class="col-lg-12 col-md-12">
 								<div class="form_box">
-									<textarea name="message" id="form-message" required cols="30" rows="10" placeholder="Your Massage">Hallo ini demo pertama saya</textarea>
+									<textarea name="message" id="form-message" required cols="30" rows="10" placeholder="Your Massage"></textarea>
 								</div>
 								<div class="form-button">
 									<button type="submit">Send Message</button>
@@ -940,125 +923,101 @@
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
 	<!-- handle form contact us -->
 	<script>
-		// Initialize DataTable
-		var table = $('#sheetDataTable').DataTable();
+		// Global callback function
+		window.formSubmitCallback = function (response) {
+			console.log("Callback Response:", response);
+			if (response.result) {
+				document.getElementById('status').textContent = 'Message sent successfully.';
+				document.getElementById('contact-form').reset();
+			} else {
+				document.getElementById('status').textContent = 'Failed to send message, please try again.';
+			}
 
-		// Get data from Google Sheets and populate DataTable
-		async function getData() {
-			const URL_web_v1 = "https://script.google.com/macros/s/AKfycby7_0R7h17r9r60svbi2UIaRGgfZbphigbO6QpRhOCV0O7sN1zFGNnh9u58HSuWIv8u/exec";
+			setTimeout(() => {
+				document.getElementById('status').textContent = '';
+			}, 3000);
+		};
+
+		// Event listener
+		/* document.getElementById('contact-form').addEventListener('submit', function (e) {
+			e.preventDefault(); 
+
+			const submitButton = document.querySelector('button[type="submit"]');
+			submitButton.disabled = true; // Disable submit button
+
 			const URL_web_v2 = "https://script.google.com/macros/s/AKfycbwTOw-fO7riTMvMeCdtGrub8Xol19T_y5AE0o5tsoVLyW6QRv4ULTO4D-x9E6Fbhj0P/exec";
-			const URL_deploy = "https://script.googleusercontent.com/macros/echo?user_content_key=-Bkec5YfSxp_NFurqi0aP-PiX-Ubmb-h6fAkhf360oK5_Yf15H4W6SaS3x1174BpxBLR2H5NCf7Cf1FjyiJuTSSpc85krF1em5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnHtghd2u_Kegf8V-JjpLCSIWxP4aR8TfNDi4_3_m3iJqsHPbbYzQm5SndPWNUyxT9g&lib=MHKUZKvFxQtAWVXoiQK4soz3PtiT7y5tZ";
-			
-			const response = await fetch(URL_web_v2+"?action=getData", {
-				method: 'GET',
-				mode: 'no-cors', // Mengatasi masalah CORS origin
-			});
-			console.log("getData: ", response);
-			$.ajax({
-				url: `${URL_web_v2}?action=getData`,
-				method: 'GET',
-				headers: {
-					'Content-Type': 'application/json'
-				},
-				success: function (response) {
-					var data = response.data;
-					console.log("dataAjax: ", response);
+			const name = document.querySelector('input[name="name"]').value;
+			const phone = document.querySelector('input[name="phone"]').value;
+			const email = document.querySelector('input[name="email"]').value;
+			const message = document.querySelector('textarea[name="message"]').value;
 
-					table.clear().draw(); // Clear existing table data
+			if (!name || !phone || !email || !message) {
+				document.getElementById('status').textContent = 'All fields are required.';
+        		submitButton.disabled = false; // Enable button if validation fails
+				return;
+			}
 
-					data.forEach(function (row) {
-						table.row.add([
-							row.name,
-							row.phone,
-							row.email,
-							row.message,
-							row.created_date
-						]).draw();
-					});
-				},
-				error: function (error) {
-					console.log("Error done data:", error.done());
-					console.log("Error fail data:", error.getAllResponseHeaders());
-					console.log("Error text data:", error.statusText);
-					console.error("Error fetching data:", error);
-					error.then(function (data, status, xhr){
-						console.log("Errors data:", data, status, xhr);
-						
-					})
-				}
-			});
-		}
+			document.getElementById('status').textContent = 'Sending message...';
 
-		// Initial fetch of data
-		getData();
-		
+			// const scriptUrl = `${URL_web_v2}?action=doPost&name=${encodeURIComponent(name)}&phone=${encodeURIComponent(phone)}&email=${encodeURIComponent(email)}&message=${encodeURIComponent(message)}&callback=formSubmitCallback`;
+			const scriptUrl = `${URL_web_v2}?action=doPost&name=${encodeURIComponent(name)}&phone=${encodeURIComponent(phone)}&email=${encodeURIComponent(email)}&message=${encodeURIComponent(message)}`;
+
+			const script = document.createElement('script');
+			script.src = scriptUrl;
+			document.body.appendChild(script);
+		}); */
+
 		document.getElementById('contact-form').addEventListener('submit', async function(e) {
 			e.preventDefault(); // Mencegah reload halaman
 
-			const ID_Penerapan = "AKfycby7_0R7h17r9r60svbi2UIaRGgfZbphigbO6QpRhOCV0O7sN1zFGNnh9u58HSuWIv8u";
-			const URL_web_v1 = "https://script.google.com/macros/s/AKfycby7_0R7h17r9r60svbi2UIaRGgfZbphigbO6QpRhOCV0O7sN1zFGNnh9u58HSuWIv8u/exec";
 			const URL_web_v2 = "https://script.google.com/macros/s/AKfycbwTOw-fO7riTMvMeCdtGrub8Xol19T_y5AE0o5tsoVLyW6QRv4ULTO4D-x9E6Fbhj0P/exec";
-			const URL_library = "https://script.google.com/macros/library/d/1NRoHdj1iwgFD2ChmyxRzALu0BAoPE_1GPjGM5u6wMVWxmDNrMueGTy9x/1";
-			const URL_demo = "https://script.google.com/macros/s/AKfycbyT7HZtRIQNDG9nDBqXh0WkBbzMpJM27GICU196SzM/dev";
-
+			
 			var name = document.querySelector('input[name="name"]').value;
 			var phone = document.querySelector('input[name="phone"]').value;
 			var email = document.querySelector('input[name="email"]').value;
 			var message = document.querySelector('textarea[name="message"]').value;
-			
+
+			// Cek apakah semua field telah terisi
+			if (!name || !phone || !email || !message) {
+				document.getElementById('status').textContent = 'All fields are required.';
+				return;
+			}
+
 			// Kirim data melalui fetch ke Google Apps Script
 			var formData = new URLSearchParams();
 			formData.append('name', name);
 			formData.append('phone', phone);
 			formData.append('email', email);
 			formData.append('message', message);
-			
-			// var formData = new FormData(this);
-			console.log("formData: ", formData.toString());
+
+			// Tampilkan status "Mengirim pesan..."
+			document.getElementById('status').textContent = 'Sending message...';
 
 			try {
-				const response = await fetch(URL_web_v2+"?action=doPost", {
+				const response = await fetch(`${URL_web_v2}?action=doPost`, {
 					method: 'POST',
 					mode: 'no-cors', // Mengatasi masalah CORS origin
 					body: formData
 				});
-				console.log("dataContact: ", response);
+				console.log("response: ", response);
 
+				// Simulasi respons untuk no-cors (karena no-cors tidak bisa mendeteksi respons sukses)
+				document.getElementById('status').textContent = 'Message sent successfully.';
+				// Reset input form
+				document.getElementById('contact-form').reset();
 				
-				if (response.ok) {
-					document.getElementById('status').textContent = 'Pesan berhasil dikirim.';
-				} else {
-					document.getElementById('status').textContent = 'Terjadi kesalahan, silakan coba lagi.';
-				}
-
-				setTimeout(() => {
-					document.getElementById('status').textContent = '';
-				}, 3000)
 			} catch (error) {
-				document.getElementById('status').textContent = 'Gagal mengirim data: ' + error.message;
-				setTimeout(() => {
-					document.getElementById('status').textContent = '';
-				}, 3000)
+				// Tampilkan pesan error jika gagal
+				document.getElementById('status').textContent = 'Failed to send message, please try again.';
+				//document.getElementById('status').textContent = 'Gagal mengirim data: ' + error.message;
 			}
 
-			// Kirim data ke Google Apps Script
-			/*
-			fetch(URL_demo, {
-				method: 'POST',
-				mode: 'no-cors', // Mengatasi masalah CORS
-				body: formData
-			})
-			.then(response => response.text())
-			.then(data => {
-				console.log("dataContact: ", data);
-				document.getElementById('status').innerHTML = "Message Sent Successfully!";
-			})
-			.catch(error => {
-				document.getElementById('status').innerHTML = "Error sending message.";
-				console.error('Error:', error);
-			});
-			*/
+			// Hapus status setelah 3 detik
+			setTimeout(() => {
+				document.getElementById('status').textContent = '';
+			}, 3000);
 		});
+
 	</script>
 
 	<!-- load dynamic content -->
