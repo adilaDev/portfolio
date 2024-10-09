@@ -962,6 +962,8 @@
 				},
 				success: function (response) {
 					var data = response.data;
+					console.log("dataAjax: ", response);
+
 					table.clear().draw(); // Clear existing table data
 
 					data.forEach(function (row) {
