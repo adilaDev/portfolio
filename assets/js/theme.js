@@ -128,14 +128,16 @@
 
 
     $(document).ready(function(){
-    $('#bar1').barfiller({ duration: 3000 });
-    $('#bar2').barfiller({ duration: 2000 });
-    $('#bar3').barfiller({ duration: 4000 });
-    $('#bar4').barfiller({ duration: 1000 });
-    $('#bar5').barfiller({ duration: 2000 });
-    $('#bar6').barfiller({ duration: 4000 });
-    $('#bar7').barfiller({ duration: 3000 });
-    $('#bar8').barfiller({ duration: 2000 });
+        $('#bar1').barfiller({ duration: 3000 });
+        $('#bar2').barfiller({ duration: 2000 });
+        $('#bar3').barfiller({ duration: 4000 });
+        $('#bar4').barfiller({ duration: 1000 });
+        $('#bar5').barfiller({ duration: 2000 });
+        $('#bar6').barfiller({ duration: 4000 });
+        $('#bar7').barfiller({ duration: 3000 });
+        $('#bar8').barfiller({ duration: 2000 });
+        $('#bar9').barfiller({ duration: 3000 });
+        $('#bar10').barfiller({ duration: 2000 });
     });
 
 

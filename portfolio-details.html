@@ -6,8 +6,13 @@
 	<title>techno-personal</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
 	<!-- Favicon -->
-	<link rel="icon" type="image/png" sizes="56x56" href="assets/images/fav-icon/icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+
 	<!-- bootstrap CSS -->
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" media="all" />
 	<!-- carousel CSS -->
@@ -35,6 +40,7 @@
 	<!-- venobox CSS -->
 	<link rel="stylesheet" href="venobox/venobox.css" type="text/css" media="all" />
 
+	<link rel="stylesheet" href="assets/css/scrollCue.css" type="text/css">
 	<!-- widget CSS -->
 	<link rel="stylesheet" href="assets/css/widget.css" type="text/css" media="all" />
 	
@@ -60,27 +66,28 @@
 			<div class="col-lg-12">
 				<div id="sticky-header" class="nav-menu">
 					<div class="header-logo">
-						<a href="index.html"><img src="assets/images/techno-logo2.png" alt=""></a>
-						<a class="main_sticky" href="index.html"><img src="assets/images/techno-logo2.png" alt=""></a>
+						<a href="index.html"><img src="assets/images/MY_LOGO/favicon_AF_gold.png" alt=""></a>
+						<a class="main_sticky" href="index.html"><img src="assets/images/MY_LOGO/favicon_AF_gold.png" alt=""></a>
 					</div>
 					<div class="heder-menu">
 						<ul>
-							<li><a href="index.html">home </a></li>
-							<li><a href="about.html">about </a></li>
-							<li><a href="service.html">services</a></li>
-							<li><a href="portfolio.html">portfolio </a></li>
-							<li class="icon"><a href="#">blog </a>
-								<div class="sub-menu">
+							<li><a href="index.html#home">home </a></li>
+							<li><a href="index.html#about">about </a></li>
+							<li><a href="index.html#experience">experience</a></li>		
+							<li class="active"><a href="index.html#portfolio">portfolio</a></li>		
+							<li><a href="index.html#skill">skill</a></li>	
+							<li><a href="index.html#contact">contact</a></li>	
+							<li><a href="javascript:void(0);">Language <i class="fa fa-angle-down"></i></a>
+								<div class="sub-menu" style="right: 20px;">
 									<ul>
-										<li><a href="blog-grid.html">Blog grid</a></li>
-										<li><a href="blog-list.html">Blog list</a></li>
+										<li id="li_en" class="selectLanguage active" style="margin-right: 0px !important;"><a href="javascript:void(0);" onclick="changeLang('en')">English</a></li>
+										<li id="li_id" class="selectLanguage" style="margin-right: 0px !important;"><a href="javascript:void(0);" onclick="changeLang('id')">Indonesia</a></li>
 									</ul>
 								</div>
 							</li>		
-							<li><a href="contact.html">contact us</a></li>	
 						</ul>
 					</div>
-					<div class="header-button">
+					<div class="header-button d-none">
 						<a href="#">Get A Quote</a>
 					</div>
 				</div>
@@ -95,24 +102,20 @@
 	<div class="mobile-menu">
 		<nav class="itsoft_menu">
 			<ul class="nav_scroll">
-				<li><a href="#">home </a>
+				<li><a href="index.html#home">home </a></li>
+				<li><a href="index.html#about">about </a></li>
+				<li><a href="index.html#experience">experiences</a></li>			
+				<li><a href="index.html#portfolio">portfolio</a></li>		
+				<li><a href="index.html#skill">skill</a></li>	
+				<li><a href="index.html#contact">contact</a></li>	
+				<li><a href="javascript:void(0);">Language</a>
 					<div class="sub-menu">
 						<ul>
-							<li><a href="landing-1.html">Landing Page One</a></li>
+							<li id="li_mobile_en" class="selectLanguage active" style="margin-right: 0px !important;"><a href="javascript:void(0);" onclick="changeLang('en')">English</a></li>
+							<li id="li_mobile_id" class="selectLanguage" style="margin-right: 0px !important;"><a href="javascript:void(0);" onclick="changeLang('id')">Indonesia</a></li>
 						</ul>
 					</div>
 				</li>
-				<li><a href="about.html">about </a></li>
-				<li><a href="service.html">services</a></li>
-				<li class="icon"><a href="#">blog </a>
-					<div class="sub-menu">
-						<ul>
-							<li><a href="blog-grid.html">Blog grid</a></li>
-							<li><a href="blog-list.html">Blog list</a></li>
-						</ul>
-					</div>
-				</li>		
-				<li><a href="contact.html">contact us</a></li>	
 			</ul>
 		</nav>
 	</div>
@@ -126,10 +129,13 @@
 			<div class="col-lg-12">
 				<div class="breacumb-content">
 					<div class="breadcumb-title">
-						<h1>Shopping Mohole</h1>
+						<h1 class="project_name">Shopping Mohole</h1>
 					</div>
 					<div class="breadcumb-content-text">
-					<a href="index.html"> home <i class="fas fa-angle-right"></i><span>Shopping Mohole</span></a>
+						<a href="index.html#portfolio"> 
+							Portofolio <i class="fas fa-angle-right"></i>
+							<span class="project_name">Shopping Mohole</span>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -142,23 +148,52 @@
 <div class="portfolio-area">
 	<div class="container">
 		<div class="row portf">
-			<div class="col-lg-6 col-md-6">
+			<div class="col-lg-12 col-md-6 mb-lg-5">
 				<div class="single-portfolio-box">
-					<div class="portfolio-thumb">
-						<img src="assets/images/p2.jpg" alt="">
+					<div class="portfolio-thumb d-none">
+						<img id="images_project" src="assets/images/p2.jpg" alt="">
+					</div>
+					<div id="carouselExampleIndicators" class="carousel slide mt-5" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img class="d-block w-100" src="assets/images/ARI.png" alt="First slide">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" src="assets/images/ARI.png" alt="Second slide">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" src="assets/images/ARI.png" alt="Third slide">
+							</div>
+						</div>
+						<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icons" aria-hidden="true"><i class="fa fa-chevron-left" style="color: #5c5c5c; font-size: 24px;"></i></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+							<span class="carousel-control-next-icons" aria-hidden="true"><i class="fa fa-chevron-right" style="color: #5c5c5c; font-size: 24px;"></i></span>
+							<span class="sr-only">Next</span>
+						</a>
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-6 col-md-6">
+			<div class="col-lg-12 col-md-6">
 				<div class="single-portfolio-box">
 					<div class="portfolio-title">
 						<h2>Portfolio Information</h2>
 						<ul>
-							<li><strong>Project Name :</strong> Creative Template Design</li>
-							<li><strong>Category :</strong> Graphics Design / Web Design</li>
-							<li><strong>Client :</strong> Bara Kobama</li>
-							<li><strong>Complete Date :</strong> Complete Date :01 April, 2018</li>
-							<li class="not"><strong>Skills :</strong> Photoshop / Illustrator</li>
+							<li><strong>Project Name :</strong> <span class="project_name">Creative Template Design</span></li>
+							<li><strong>Category :</strong> <span id="category">Graphics Design / Web Design</span></li>
+							<li><strong>Date Range :</strong> <span id="start_date">01 April, 2017</span></li>
+							<li><strong>Total Duration :</strong> <span id="end_date">01 April, 2018</span></li>
+							<li><strong>Status Project :</strong> <span id="status">Finished</span></li>
+							<li><strong>Team :</strong> <span id="team">Photoshop / Illustrator</span></li>
+							<li><strong>Frameworks :</strong> <span id="framework">Photoshop / Illustrator</span></li>
+							<li class="not"><strong>Link Project :</strong> <a id="link" class="text-primary" href="javascript:void(0)" target="_blank"></a></li>
 						</ul>
 					</div>
 					<div class="portfolio-icon">
@@ -174,11 +209,27 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="portfolio-bottom">
-				<h2>Awesome Logo Design</h2>
-				<p>Whether you are building an enterprise web portal or a state-of-the-art website, you always need the right modern tools. Well-built and maintained PHP frameworks provide those tools maintained PHP frameworks provide those tools in abundance, allowing developers to save time, re-use code, and streamline the back end. As software development tools continuously change to follow the latest. Despite the competition from startups and the ever-present economic challenges, the banking industry is gradually adopting what the latest technologies have to offer. From cloud technology to cyber risk management to machine learning in investment banking, join us as we explore the banking industry trends for 2019 and beyond. Cloud is one of the current banking industry trends as well.</p>
+			
+			<div class="col-12 mt-5">
+				<nav aria-label="Page navigation">
+					<ul id="listPagination" class="pagination justify-content-center">
+						<li class="page-item disabled">
+							<a id="prevBtn" class="page-link" href="javascript:void(0);" tabindex="-1">Previous</a>
+						</li>
+						<li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
+						<li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+						<li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+						<li class="page-item">
+							<a id="nextBtn" class="page-link" href="javascript:void(0);">Next</a>
+						</li>
+					</ul>
+				</nav>
 			</div>
+		</div>
+		<div class="portfolio-bottom" id="description">
+			<h2>Awesome Logo Design</h2>
+			<p>Whether you are building an enterprise web portal or a state-of-the-art website, you always need the right modern tools. Well-built and maintained PHP frameworks provide those tools maintained PHP frameworks provide those tools in abundance, allowing developers to save time, re-use code, and streamline the back end. As software development tools continuously change to follow the latest. Despite the competition from startups and the ever-present economic challenges, the banking industry is gradually adopting what the latest technologies have to offer. From cloud technology to cyber risk management to machine learning in investment banking, join us as we explore the banking industry trends for 2019 and beyond. Cloud is one of the current banking industry trends as well.</p>
+		</div>
 	</div>
 </div>
 <!--==================================================-->
@@ -253,7 +304,7 @@
 	<!-- venobox js -->
 	<script src="venobox/venobox.js"></script>
 	<!-- ajax mail js -->
-	<script src="assets/js/ajax-mail.js"></script>
+	<!-- <script src="assets/js/ajax-mail.js"></script> -->
 	<!--  animated-text js -->	
 	<script src="assets/js/animated-text.js"></script>
 	<!-- venobox min js -->
@@ -266,36 +317,365 @@
 	<script src="assets/js/jquery.meanmenu.js"></script>
 	<script src="assets/js/popper.min.js"></script>
 	<!-- jquery scrollup js -->	
-	<script src="assets/js/jquery.scrollUp.js"></script>
+	<script src="assets/js/jquery.scrollUp.js"></script>	
 	<!-- theme js -->	
 	<script src="assets/js/theme.js"></script>
 	<script src="assets/js/jquery.barfiller.js"></script>
+	<script src="assets/js/scrollCue.min.js"></script>
 	<!-- modernizr js -->	
 	<script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
-	<script src="https://unpkg.com/ityped@0.0.10"></script>
-       <script>
-            window.ityped.init(document.querySelector('.ityped'),{
-                strings: ['WEB DESIGNE RPUBLIC ', 'FIGUREPHOTOGRAPHY ',],
-                loop: true
-            })
-        </script> 
+	<!-- <script src="https://unpkg.com/ityped@0.0.10"></script> -->
+	<script>
+		let _cacheData = [];
+		let currentIndex = 0;
+		// Data proyek dari JSON
+		let projects = [
+			{ "project_name": "ResouSmart" },
+			{ "project_name": "Showbiz" },
+			{ "project_name": "Pricing System" },
+			{ "project_name": "Data Sync" },
+			{ "project_name": "Smart POS" },
+			{ "project_name": "Showcase" },
+			{ "project_name": "Digital Services" },
+			{ "project_name": "Travel App" },
+			{ "project_name": "Inventory App" }
+		];
 
-		<!-- jquery js -->
+		$(document).ready(function() {
+			loadContent('en');
+		});
+
+		// Event listener for language change
+		function changeLang(lang) {
+			const selectLang = $(".selectLanguage");
+			selectLang.toggleClass("active");
+
+			console.clear();
+			// console.log("onChange: ", lang);
+			// console.log("selectLang: ", selectLang);
+			// console.log("==============================");
+			loadContent(lang);
+		}
+
+		function getParams(){
+			// Ambil URL saat ini
+			const urlParams = new URLSearchParams(window.location.search);
+			// Ambil nilai dari parameter 'project'
+			const currentProject = urlParams.get('project');
+			
+			console.log("urlParams: ", urlParams);
+			console.log("currentProject: ", currentProject);
+			console.log("_cacheData: ", _cacheData);
+
+			// console.log("projects: ", projects);
+			// console.log("transformDataToProjects: ", projects);
+			
+			if (_cacheData.length > 0) {
+				var filterData = getFilterData("project_name", currentProject, _cacheData);
+				console.log("filterData: ", filterData);
+				changeContent(filterData);
+
+				projects = transformDataToProjects(_cacheData);
+				<!-- dataSlider = _cacheData[currentIndex]; -->
+				dataSlider = filterData[0];
+
+				console.log("dataSlider: ", dataSlider);
+				// Cari indeks dari proyek saat ini di dalam data JSON
+				currentIndex = projects.findIndex(item => item.project_name === currentProject);
+				console.log("currentIndex: ", currentIndex, projects[currentIndex].project_name);
 	
+				createPagination();
+				
+				createImageSlider(dataSlider.img_slider);
+			}
+		}
+
+		function createPagination(){
+			const ulPagination = $("#listPagination");
+			ulPagination.html(null); // kosongkan element
+			let liPrev = `<li id="prevLi" class="page-item ${currentIndex === 0 ? 'disabled' : ''}">
+							<a id="prevBtn" class="page-link" href="javascript:void(0);" tabindex="-1">Previous</a>
+						</li>`;
+			let liNext = `<li id="nextLi" class="page-item ${currentIndex === projects.length - 1 ? 'disabled' : ''}">
+							<a id="nextBtn" class="page-link" href="javascript:void(0);">Next</a>
+						</li>`;
+			let aPage = '';
+
+			ulPagination.append(liPrev);
+			_cacheData.forEach((item, index) => {
+				var no = index+1;
+				var isActive = (currentIndex == index) ? "active" : "";
+				var url_page = `http://127.0.0.1:3000/portfolio-details.html?project=${item.project_name}`;
+				aPage += `<li class="page-item ${isActive}"><a class="page-link" href="${url_page}">${no}</a></li>`;
+			});
+			ulPagination.append(aPage);
+			ulPagination.append(liNext);
+
+			// Event listener untuk tombol Next
+			document.getElementById('nextBtn').addEventListener('click', function() {
+				if (currentIndex < projects.length - 1) {
+					currentIndex++;
+					updatePrevNextButtons();
+					navigateToProject(currentIndex);
+				}
+			});
+
+			// Event listener untuk tombol Prev
+			document.getElementById('prevBtn').addEventListener('click', function() {
+				if (currentIndex > 0) {
+					currentIndex--;
+					updatePrevNextButtons();
+					navigateToProject(currentIndex);
+				}
+			});
+
+			// Kondisi awal untuk tombol prev dan next
+			updatePrevNextButtons();
+		}
+
+		function updatePrevNextButtons() {
+			const prevLi = document.getElementById('prevLi');
+			const nextLi = document.getElementById('nextLi');
+
+			// Jika di halaman pertama, tambahkan class 'disabled' pada tombol Previous
+			if (currentIndex === 0) {
+				prevLi.classList.add('disabled');
+			} else {
+				prevLi.classList.remove('disabled');
+			}
+
+			// Jika di halaman terakhir, tambahkan class 'disabled' pada tombol Next
+			if (currentIndex === projects.length - 1) {
+				nextLi.classList.add('disabled');
+			} else {
+				nextLi.classList.remove('disabled');
+			}
+		}
+
+		const transformDataToProjects = (data) => {
+			return data.map(item => ({
+				project_name: item.project_name,
+				status: item.status,
+				category: item.category,
+				link: item.link || "N/A", // Use 'N/A' if link is empty
+			}));
+		};
+		
+		// Fungsi untuk mengubah URL
+		function navigateToProject(index) {
+			if (index >= 0 && index < projects.length) {
+				const nextProject = projects[index].project_name;
+				// Redirect ke halaman yang sesuai dengan project_name di query parameter
+				window.location.href = `http://127.0.0.1:3000/portfolio-details.html?project=${nextProject}`;
+			}
+		}
+
+		function changeContent(data = []){
+			const img = document.getElementById("images_project");
+			const projectName = document.getElementsByClassName("project_name");
+			const cat = document.getElementById("category");
+			const startDate = document.getElementById("start_date");
+			const endDate = document.getElementById("end_date");
+			const status = document.getElementById("status");
+			const link = document.getElementById("link");
+			const team = document.getElementById("team");
+			const keterangan = document.getElementById("description");
+			const frame = document.getElementById("framework");
+
+			let allEl = {
+				"img": img,
+				"projectName": projectName,
+				"category": cat,
+				"startDate": startDate,
+				"endDate": endDate,
+				"status": status,
+				"link": link,
+				"team": team,
+				"keterangan": keterangan,
+				"framework": frame,
+			}
+			// console.log("allElement: ", allEl);
+
+			if (data.length > 0) {
+				data.forEach((item, index) => {
+					const images = item.images;
+					const project_name = item.project_name;
+					const category = item.category;
+					const framework = item.framework;
+					const keterangan = item.keterangan;
+					const start_date = item.start_date;
+					const end_date = item.end_date;
+					const status = item.status;
+					const link = item.link;
+					const team = item.team;
+					const calculate = calculateDateRangeInDetail(start_date, end_date);
+
+					// ubah konten
+					allEl.img.setAttribute("src", images);
+					allEl.category.innerText = category;
+					allEl.startDate.innerText = (end_date == "") ?  start_date + " until N/A" :  start_date+" until "+end_date;
+					allEl.endDate.innerText = calculate.result;
+					allEl.status.innerText = status;
+					allEl.framework.innerText = framework;
+					if(link != ""){
+						allEl.link.setAttribute('href', link);
+						allEl.link.innerText = link;
+					}
+					allEl.team.innerText = team;
+					allEl.keterangan.innerHTML = keterangan;
+
+					// khusus project name
+					for (let i = 0; i < allEl.projectName.length; i++) {
+						const name = allEl.projectName[i];
+						name.innerText = project_name;
+					}
+
+					console.log("changeContent: ", item, index);
+				});
+			}
+		}
+
+		function calculateDateRangeInDetail(startDate, endDate) {
+			// Konversi string tanggal ke objek Date
+			const start = new Date(startDate);
+			const end = new Date(endDate);
+			
+			// Inisialisasi variabel untuk tahun, bulan, dan hari
+			let years = end.getFullYear() - start.getFullYear();
+			let months = end.getMonth() - start.getMonth();
+			let days = end.getDate() - start.getDate();
+
+			// Jika hari negatif, pinjam hari dari bulan sebelumnya
+			if (days < 0) {
+				// Kurangi satu bulan
+				months--;
+				// Tambahkan jumlah hari dalam bulan sebelumnya
+				/* const prevMonth = new Date(end.getFullYear(), end.getMonth(), 0); // 0 berarti hari terakhir dari bulan sebelumnya
+				days += prevMonth.getDate(); */
+				days += new Date(end.getFullYear(), end.getMonth(), 0).getDate();
+			}
+
+			// Jika bulan negatif, pinjam bulan dari tahun sebelumnya
+			if (months < 0) {
+				years--;
+				months += 12;
+			}
+
+			// Handle case where days are 28 or more to round to next month
+			if (days >= 28) {
+				months++;
+				days = 0;  // Reset days to 0 because it's rounded to a full month
+			}
+
+			// Logika untuk variabel result berdasarkan nilai years, months, dan days
+			let result = '';
+			
+			// Jika tahun lebih dari 0, tambahkan "Year"
+			if (years > 0) {
+				result += years + (years > 1 ? ' Years ' : ' Year ');
+			}
+			
+			// Jika bulan lebih dari 0, tambahkan "Month"
+			/* if (months > 0) {
+				result += months + (months > 1 ? ' Months ' : ' Month ');
+			}*/
+			if (months > 0) {
+				result += `${months} Month${months > 1 ? 's ' : ''}`;
+			}
+			
+			// Jika hari lebih dari 0, tambahkan "Day"
+			if (days > 0) {
+				result += days + (days > 1 ? ' Days' : ' Day');
+			}
+
+			// Trim spasi ekstra di akhir hasil
+			result = result.trim();
+
+			// Mengembalikan hasil dalam format tahun, bulan, hari, dan teks hasil
+			return {
+				years: years,
+				months: months,
+				days: days,
+				result: result
+			};
+		}
 
 
+		function createImageSlider(img_slider) {
+			const carouselIndicators = document.querySelector(".carousel-indicators");
+			const carouselInner = document.querySelector(".carousel-inner");
 
-<script>
-$(document).ready(function(){
+			// Kosongkan elemen sebelumnya
+			carouselIndicators.innerHTML = '';
+			carouselInner.innerHTML = '';
 
-$('.aa').counterUp({
-    delay: 10,
-    time: 1000
-});
+			// Loop untuk membuat indicators dan carousel items
+			img_slider.forEach((imgSrc, index) => {
+				// Tambahkan carousel indicators
+				const indicator = document.createElement("li");
+				indicator.setAttribute("data-target", "#carouselExampleIndicators");
+				indicator.setAttribute("data-slide-to", index);
+				if (index === 0) indicator.classList.add("active");
+				carouselIndicators.appendChild(indicator);
 
+				// Tambahkan carousel item
+				const carouselItem = document.createElement("div");
+				carouselItem.classList.add("carousel-item");
+				if (index === 0) carouselItem.classList.add("active");
 
-});
-</script>
+				const img = document.createElement("img");
+				img.classList.add("d-block", "w-100");
+				img.src = imgSrc;
+				img.alt = `Slide ${index + 1}`;
+
+				carouselItem.appendChild(img);
+				carouselInner.appendChild(carouselItem);
+			});
+		}
+
+		function getFilterData(key, value, jsonData) {
+			// Memeriksa apakah jsonData adalah array
+			if (!Array.isArray(jsonData)) {
+				console.error("Data harus berupa array JSON.");
+				return [];
+			}
+
+			// Memfilter data JSON berdasarkan key dan value
+			const filteredData = jsonData.filter(item => {
+				return item[key] === value;
+			});
+
+			return filteredData;
+		}
+
+		// Function to load JSON based on language
+		function loadContent(language) {
+			const d = new Date();
+			const jsonFile = language === "en" ? "assets/db/data_portofolio_en.json?v="+d.getTime() : "assets/db/data_portofolio.json?v="+d.getTime();
+			// console.log("loadContent: ", language);
+			// console.log("jsonFile: ", jsonFile);
+
+			fetch(jsonFile).then(response => response.json())
+				.then(data => {
+					console.log("dataJSON", language,": ", data);
+					console.log("==============================");
+					_cacheData = data.proyek;
+					getParams();
+				})
+				.catch(error => console.error('Error loading JSON:', error));
+		}
+
+	</script> 
+
+	<!-- jquery js -->
+	<script>
+		$(document).ready(function(){
+			$('.aa').counterUp({
+				delay: 10,
+				time: 1000
+			});
+		});
+	</script>
 
 	<script>
 		(function($) {

@@ -1,0 +1,440 @@
+{
+    "home": {
+        "nama": "Hai, saya Achmad Fadilah",
+        "deskripsi": "<p style='margin-bottom: 20px; width: 100% !important;'>Halo! Saya Achmad Fadilah, seorang <b>Programmer</b> dengan pengalaman lebih dari <b>4 tahun</b> dalam pengembangan web menggunakan <b>PHP</b> dan framework <b>CodeIgniter</b>. </p><p style='margin-bottom: 20px; width: 100% !important;'>Saya memiliki minat kuat dalam bidang <b>UI/UX Design</b> dan telah mengembangkan kemampuan dalam <b>HTML5</b>, <b>CSS</b>, dan <b>Figma</b> untuk membuat desain antarmuka yang menarik dan user-friendly. Saat ini, saya sedang memperdalam keahlian saya dalam <b>Node.js</b> dan <b>Python</b> untuk menjadi <b>Full-Stack Developer</b> yang handal.</p>",
+        "foto": "assets/images/profile_circle.png"
+    },
+    "about_me": {
+        "fullname": "Achmad Fadilah",
+        "nickname": "Fadil",
+        "birthday": "Jakarta, 23 Juni 1997",
+        "number": "+6289672781297",
+        "email": "achmadfadillah97@gmail.com",
+        "deskripsi": "<p style='margin-bottom: 20px; width: 100% !important;'>Halo! Saya seorang <b>Programmer</b> dengan pengalaman lebih dari <b>4 tahun</b> dalam pengembangan web menggunakan <b>PHP</b> dan framework <b>CodeIgniter</b>. </p>",
+        "download_cv": "assets/cv/CV_Achmad_Fadilah.pdf"
+    },
+    "skill": [
+        {
+            "nama": "Backend Development",
+            "icon": "fas fa-code",
+            "items": [
+                {
+                    "nama": "PHP (CodeIgniter)",
+                    "persentase": 100
+                },
+                {
+                    "nama": "Python",
+                    "persentase": 80
+                },
+                {
+                    "nama": "Node.js",
+                    "persentase": 50
+                }
+            ]
+        },
+        {
+            "nama": "Frontend Development",
+            "icon": "fas fa-palette",
+            "items": [
+                {
+                    "nama": "HTML5",
+                    "persentase": 100
+                },
+                {
+                    "nama": "CSS3",
+                    "persentase": 90
+                },
+                {
+                    "nama": "JavaScript",
+                    "persentase": 100
+                },
+                {
+                    "nama": "jQuery",
+                    "persentase": 100
+                },
+                {
+                    "nama": "Boostrap",
+                    "persentase": 100
+                },
+                {
+                    "nama": "React.js",
+                    "persentase": 10
+                }
+            ]
+        },
+        {
+            "nama": "Database Management",
+            "icon": "fas fa-database",
+            "items": [
+                {
+                    "nama": "MySQL",
+                    "persentase": 90
+                },
+                {
+                    "nama": "MongoDB",
+                    "persentase": 10
+                },
+                {
+                    "nama": "PostgreSQL",
+                    "persentase": 0
+                }
+            ]
+        },
+        {
+            "nama": "UI/UX Design",
+            "icon": "fas fa-pencil-ruler",
+            "items": [
+                {
+                    "nama": "Adobe Photoshop",
+                    "persentase": 70
+                },
+                {
+                    "nama": "Adobe Illustrator",
+                    "persentase": 80
+                },
+                {
+                    "nama": "Figma",
+                    "persentase": 70
+                }
+            ]
+        },
+        {
+            "nama": "Data Formats",
+            "icon": "fas fa-file-code",
+            "items": [
+                {
+                    "nama": "JSON",
+                    "persentase": 100
+                },
+                {
+                    "nama": "GeoJSON",
+                    "persentase": 100
+                },
+                {
+                    "nama": "XML",
+                    "persentase": 50
+                }
+            ]
+        },
+        {
+            "nama": "Geospatial Tools",
+            "icon": "fas fa-map-location-dot",
+            "items": [
+                {
+                    "nama": "Mapbox GL JS",
+                    "persentase": 100
+                },
+                {
+                    "nama": "Leaflet",
+                    "persentase": 70
+                },
+                {
+                    "nama": "Google Maps API",
+                    "persentase": 50
+                },
+                {
+                    "nama": "OpenStreetMap",
+                    "persentase": 40
+                },
+                {
+                    "nama": "ArcGIS",
+                    "persentase": 5
+                },
+                {
+                    "nama": "QGIS",
+                    "persentase": 5
+                }
+            ]
+        },
+        {
+            "nama": "Data Visualization Tools",
+            "icon": "fas fa-chart-column",
+            "items": [
+                {
+                    "nama": "Chart.js",
+                    "persentase": 90
+                },
+                {
+                    "nama": "Highcharts",
+                    "persentase": 90
+                },
+                {
+                    "nama": "Plotly",
+                    "persentase": 40
+                },
+                {
+                    "nama": "Tableau",
+                    "persentase": 30
+                },
+                {
+                    "nama": "D3.js",
+                    "persentase": 20
+                }
+            ]
+        },
+        {
+            "nama": "API Design & Web Services",
+            "icon": "fa fa-globe",
+            "items": [
+                {
+                    "nama": "REST",
+                    "persentase": 80
+                },
+                {
+                    "nama": "Postman",
+                    "persentase": 80
+                },
+                {
+                    "nama": "OAuth",
+                    "persentase": 60
+                },
+                {
+                    "nama": "OpenAPI",
+                    "persentase": 50
+                },
+                {
+                    "nama": "API Gateway",
+                    "persentase": 50
+                }
+            ]
+        },
+        {
+            "nama": "DevOps & Tools",
+            "icon": "fas fa-tools",
+            "items": [
+                {
+                    "nama": "Git",
+                    "persentase": 80
+                },
+                {
+                    "nama": "Docker",
+                    "persentase": 0
+                },
+                {
+                    "nama": "CI/CD",
+                    "persentase": 0
+                }
+            ]
+        }
+    ],
+    "pendidikan": [
+        {
+            "nama_sekolah": "Universitas Gunadarma",
+            "tahun": "2014 - 2017",
+            "jurusan": "D3-Manajemen Informatika"
+        },
+        {
+            "nama_sekolah": "SMK Karya Teladan",
+            "tahun": "2011 - 2014",
+            "jurusan": "Akuntansi"
+        },
+        {
+            "nama_sekolah": "SMP PGRI 10",
+            "tahun": "2008 - 2011",
+            "jurusan": ""
+        }
+    ],
+    "pengalaman_kerja": [
+        {
+            "nama_perusahaan": "PT. Asia Research Institute",
+            "tahun": "Oktober 2019 - Sekarang",
+            "posisi": "Web Developer",
+            "job_desc": "Mengembangkan dan memelihara aplikasi web menggunakan CodeIgniter 3 dan Python. Serta membuat desain web dengan Figma dan implementasi UI yang optimal dan responsif."
+        },
+        {
+            "nama_perusahaan": "PT. Teleconsult Nusantara",
+            "tahun": "Mei 2017 - Desember 2019",
+            "posisi": "Multimedia",
+            "job_desc": "Mengerjakan project web dan desain foto sesuai kebutuhan perusahaan."
+        },
+        {
+            "nama_perusahaan": "PT. Bussan Auto Finance",
+            "tahun": "Mei 2018 - Agustus 2018",
+            "posisi": "Magang Desain Grafis",
+            "job_desc": "Mengerjakan design dan video untuk kebutuhan perusahaan."
+        }
+    ],
+    "proyek": [
+        {
+            "no_urut": "13",
+            "images": "assets/images/ARI.png",
+            "img_slider": ["assets/images/ARI.png", "assets/images/ARI.png", "assets/images/ARI.png", "assets/images/ARI.png", "assets/images/ARI.png"],
+            "project_name": "GIS web app",
+            "keterangan": "<h3>GIS Web App</h3><p>GIS Web adalah platform website yang menyediakan big data yang dikelola dengan sangat baik khusus di Indonesia. Aplikasi ini dirancang untuk memberikan kemudahan akses terhadap data spasial yang dapat membantu dalam berbagai analisis.</p><p><strong>Fitur Utama:</strong> Data real-time, analisis peta interaktif, dan berbagai alat bantu GIS. Anda bisa mendapatkan data ini dengan cara berlangganan pada layanan kami.</p><p>Aplikasi ini terus berkembang dengan penambahan fitur-fitur baru sesuai kebutuhan pengguna.</p>",
+            "framework": "Codeigniter 3",
+            "start_date": "2024-08-01",
+            "end_date": "",
+            "status": "Pending",
+            "category": "Internal Project",
+            "team": "Fadil (IT Division)",
+            "link": "",
+            "path": "gisweb",
+            "last_update": "2024-09-30 19:38:40"
+        },
+        {
+            "no_urut": "17",
+            "images": "assets/images/ARI.png",
+            "img_slider": ["assets/images/ARI.png", "assets/images/ARI.png", "assets/images/ARI.png", "assets/images/ARI.png", "assets/images/ARI.png"],
+            "project_name": "ResouSmart",
+            "keterangan": "<h3>ResouSmart</h3><p>ResouSmart adalah aplikasi monitoring proyek dan tugas setiap karyawan di PT Asia Research Institute. Aplikasi ini memungkinkan perusahaan untuk memantau aktivitas harian karyawan secara efisien.</p><p>Fitur yang disediakan meliputi grafik performa, jumlah hari kerja, jumlah cuti, serta pengingat tugas harian otomatis.</p><p>Pengguna juga dapat melihat riwayat pekerjaan dan kinerja secara lengkap dalam satu tampilan dashboard.</p>",
+            "framework": "Codeigniter 3",
+            "start_date": "2024-04-01",
+            "end_date": "2024-07-31",
+            "status": "Finished",
+            "category": "Internal Project",
+            "team": "Fadil (IT Division)",
+            "link": "https:\/\/resousmart.asiaresearchinstitute.com\/",
+            "path": "resousmart",
+            "last_update": "2024-09-30 19:39:41"
+        },
+        {
+            "no_urut": "16",
+            "images": "assets/images/ARI.png",
+            "img_slider": ["assets/images/ARI.png", "assets/images/ARI.png", "assets/images/ARI.png", "assets/images/ARI.png", "assets/images/ARI.png"],
+            "project_name": "Showbiz",
+            "keterangan": "<h3>Showbiz</h3><p>Showbiz adalah aplikasi berbasis web untuk menampilkan POI (Point of Interest) di seluruh Jepang. Data yang ditampilkan adalah hasil dari tim scraping dan diperjualbelikan untuk pelanggan di Jepang.</p><p>Platform ini membantu pelanggan untuk melakukan riset lokasi yang lebih efisien dengan data yang akurat.</p><p>Aplikasi ini digunakan oleh berbagai perusahaan di Jepang untuk kebutuhan bisnis dan analisis lokasi.</p>",
+            "framework": "Codeigniter 3",
+            "start_date": "2022-12-01",
+            "end_date": "2023-09-30",
+            "status": "Finished",
+            "category": "Public Project",
+            "team": "Fadil (IT Division), Satria (IT Division)",
+            "link": "https:\/\/showbiz.locationtech.jp\/",
+            "path": "loketechku\/",
+            "last_update": "2024-09-30 19:33:42"
+        },
+        {
+            "no_urut": "15",
+            "images": "assets/images/ARI.png",
+            "img_slider": ["assets/images/ARI.png", "assets/images/ARI.png", "assets/images/ARI.png", "assets/images/ARI.png", "assets/images/ARI.png"],
+            "project_name": "Location Technology",
+            "keterangan": "<h3>Location Technology</h3><p>Location Technology adalah aplikasi berbasis web yang menyediakan layanan request quotation untuk data POI seluruh Jepang. Aplikasi ini memfasilitasi pembelian data oleh pelanggan Jepang.</p><p>Untuk melihat data POI di seluruh Jepang, Anda bisa mengklik link berikut <a href='https://showbiz.locationtech.jp/' title='Showbiz'>Showbiz</a>.</p><p>Proyek ini dirancang khusus untuk melayani kebutuhan pelanggan di Jepang dengan data yang selalu diperbarui.</p>",
+            "framework": "Codeigniter 3",
+            "start_date": "2022-08-01",
+            "end_date": "2023-01-31",
+            "status": "Finished",
+            "category": "Public Project",
+            "team": "Fadil (IT Division)",
+            "link": "https:\/\/locationtech.jp\/",
+            "path": "http:\/\/localhost\/adik_ra\/",
+            "last_update": "2024-09-30 19:36:59"
+        },
+        {
+            "no_urut": "5",
+            "images": "assets/images/ARI.png",
+            "img_slider": ["assets/images/ARI.png", "assets/images/ARI.png", "assets/images/ARI.png", "assets/images/ARI.png", "assets/images/ARI.png"],
+            "project_name": "Rokesuma Alternative Web",
+            "keterangan": "<h3>Rokesuma Alternative Web</h3><p>Aplikasi ini dibuat untuk menganalisis perkembangan toko di seluruh Jepang. Aplikasi ini khusus dibuat untuk internal perusahaan, terutama Head Office di Jepang.</p><p>Pengguna dapat mengakses aplikasi melalui link berikut <a href='https://ra.asiaresearchinstitute.com/' title='Rokesuma Web'>Rokesuma Alternative Web</a>.</p><p>Fitur analisis dan pelaporan yang ada membantu perusahaan dalam membuat keputusan strategis.</p>",
+            "framework": "Codeigniter 3",
+            "start_date": "2021-11-01",
+            "end_date": "2022-07-22",
+            "status": "Finished",
+            "category": "Internal Project",
+            "team": "Fadil (IT Division), Satria (IT Division), Salman (Sraping Division)",
+            "link": "https:\/\/ra.asiaresearchinstitute.com\/",
+            "path": "ra_web",
+            "last_update": "2024-09-30 19:30:13"
+        },
+        {
+            "no_urut": "2",
+            "images": "assets/images/ARI.png",
+            "img_slider": ["assets/images/ARI.png", "assets/images/ARI.png", "assets/images/ARI.png", "assets/images/ARI.png", "assets/images/ARI.png"],
+            "project_name": "Compare data excel",
+            "keterangan": "<h3>Aplikasi Compare Data Excel</h3><p>Aplikasi ini dibuat untuk membandingkan dua file excel. Pengguna dapat menemukan perbedaan antara baris dan kolom pada kedua file excel dengan mudah menggunakan aplikasi ini. Proses perbandingan dilakukan secara efisien, membantu pengguna menemukan ketidakcocokan data secara cepat.</p><p><strong>Fitur Utama:</strong> Aplikasi ini menawarkan perbandingan data secara real-time, visualisasi perbedaan antar baris dan kolom, serta dukungan untuk berbagai format file excel.</p><p>Dengan antarmuka yang mudah digunakan, aplikasi ini dirancang untuk mengoptimalkan waktu dan meningkatkan akurasi dalam analisis data.</p>",
+            "framework": "Codeigniter 3",
+            "start_date": "2021-10-01",
+            "end_date": "2021-10-31",
+            "status": "Finished",
+            "category": "Internal Project",
+            "team": "Fadil (IT Division), Haris (AI Division)",
+            "link": "https:\/\/compare.asiaresearchinstitute.com\/",
+            "path": "compare",
+            "last_update": "2024-09-30 19:31:13"
+        },
+        {
+            "no_urut": "4",
+            "images": "assets/images/ARI.png",
+            "img_slider": ["assets/images/ARI.png", "assets/images/ARI.png", "assets/images/ARI.png", "assets/images/ARI.png", "assets/images/ARI.png"],
+            "project_name": "CTP (Customer Traffic Prediction)",
+            "keterangan": "<h3>CTP (Customer Traffic Prediction)</h3><p>Aplikasi CTP dirancang khusus untuk keperluan internal di kantor pusat yang berlokasi di Jepang. Aplikasi ini memungkinkan pemantauan trafik pengunjung mall, serta prediksi performa beberapa toko di masa mendatang.</p><p><strong>Tujuan Utama:</strong> CTP digunakan untuk memantau pergerakan pelanggan secara real-time dan menganalisis tren untuk meningkatkan efisiensi operasional toko-toko di mall.</p><p>Aplikasi ini memberikan laporan statistik yang akurat dan prediksi berdasarkan data pengunjung sebelumnya.</p>",
+            "framework": "Codeigniter 3",
+            "start_date": "2021-09-06",
+            "end_date": "2022-04-30",
+            "status": "Finished",
+            "category": "Internal Project",
+            "team": "Fadil (IT Division), Haris (AI Division)",
+            "link": "https:\/\/ctp.asiaresearchinstitute.com\/",
+            "path": "kla",
+            "last_update": "2024-09-30 19:30:30"
+        },
+        {
+            "no_urut": "1",
+            "images": "assets/images/ARI.png",
+            "img_slider": ["assets/images/ARI.png", "assets/images/ARI.png", "assets/images/ARI.png", "assets/images/ARI.png", "assets/images/ARI.png"],
+            "project_name": "Gift Web app",
+            "keterangan": "<h3>Gift Web App</h3><p>Gift Web App dikembangkan khusus untuk event survey di Aeon Mall. Aplikasi ini memberikan pengalaman unik bagi pengguna yang telah berpartisipasi dalam survei dengan menawarkan penukaran hadiah melalui scan QR code.</p><p><strong>Penggunaan:</strong> Aplikasi ini dirancang untuk memudahkan peserta survei dalam menukarkan hadiah mereka secara digital, yang meningkatkan interaksi antara pengguna dan penyelenggara survei.</p><p>Gift Web App menggunakan teknologi modern untuk memastikan proses penukaran hadiah yang aman dan efisien.</p>",
+            "framework": "Codeigniter 3",
+            "start_date": "2021-03-01",
+            "end_date": "2021-03-31",
+            "status": "Finished",
+            "category": "Internal Project",
+            "team": "Fadil (IT Division), Satria (IT Division)",
+            "link": "https:\/\/gift.asiaresearchinstitute.com\/",
+            "path": "gift",
+            "last_update": "2024-09-30 19:29:51"
+        },
+        {
+            "no_urut": "3",
+            "images": "assets/images/ARI.png",
+            "img_slider": ["assets/images/ARI.png", "assets/images/ARI.png", "assets/images/ARI.png", "assets/images/ARI.png", "assets/images/ARI.png"],
+            "project_name": "Harga Pedia",
+            "keterangan": "<h3>Harga Pedia</h3><p>Harga Pedia adalah platform publik yang mempermudah pencarian informasi mengenai kisaran harga rumah di Indonesia. Aplikasi ini dirancang untuk memberikan kemudahan bagi masyarakat yang ingin mengetahui harga properti terkini.</p><p><strong>Fitur Utama:</strong> Dengan integrasi AI (Artificial Intelligence), Harga Pedia dapat memberikan estimasi harga rumah berdasarkan lokasi dan spesifikasi properti secara akurat.</p><p>Aplikasi ini merupakan solusi ideal bagi siapa saja yang sedang mencari properti di Indonesia, dengan informasi harga yang diperbarui secara real-time.</p>",
+            "framework": "Codeigniter 3",
+            "start_date": "2020-01-01",
+            "end_date": "2020-06-01",
+            "status": "Finished",
+            "category": "Public Project",
+            "team": "Fadil (IT Division), Haris (AI Division)",
+            "link": "https:\/\/hargapedia.id\/",
+            "path": "hargapedia",
+            "last_update": "2024-09-30 19:29:18"
+        }
+    ],
+    "kontak": [
+        {
+            "nama": "Email",
+            "icon": "fas fa-envelope",
+            "url": "mailto:achmadfadillah97@gmail.com"
+        },
+        {
+            "nama": "Telepon",
+            "icon": "fas fa-phone",
+            "url": "tel:+6289672781297"
+        },
+        {
+            "nama": "Whatsapp",
+            "icon": "fas fa-whatsapp",
+            "url": "https://wa.me/6289672781297?text=Hallo%20saya%20mendapatkan%20nomor%20whatsapp%20anda%20dari%20portofolio.%0ABisakah%20kita%20berdiskusi%2C%20lebih%20lanjut%3F%0ANama%20Lengkap%20%3A%20.....%0AEmail%20%3A%20....."
+        },
+        {
+            "nama": "Instagram",
+            "icon": "fab fa-instagram",
+            "url": "https://www.instagram.com/achmd.fadillah"
+        },
+        {
+            "nama": "Facebook",
+            "icon": "fab fa-facebook",
+            "url": "https://www.facebook.com/achmadfadiilah"
+        },
+        {
+            "nama": "Linkedin",
+            "icon": "fab fa-linkedin",
+            "url": "https://linkedin.com/in/achmad-fadilah-217093171"
+        },
+        {
+            "nama": "Github",
+            "icon": "fab fa-github",
+            "url": "https://github.com/adilaDev"
+        }
+    ]
+}

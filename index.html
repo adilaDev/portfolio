@@ -3,11 +3,18 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>techno-personal</title>
-	<meta name="description" content="">
+	<title>Portfolio - Achmad Fadilah</title>
+    <meta name="description" content="Portofolio Achmad Fadilah - Programmer dan UI/UX Designer dengan pengalaman dalam PHP, CodeIgniter, Node.js, dan Next.js.">
+    <meta name="keywords" content="Programmer, UI/UX Designer, PHP, CodeIgniter, Node.js, Next.js, Full-stack Developer, Portfolio">
+    <meta name="author" content="Achmad Fadilah">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<!-- Favicon -->
-	<link rel="icon" type="image/png" sizes="56x56" href="assets/images/fav-icon/icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+
 	<!-- bootstrap CSS -->
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" media="all" />
 	<!-- carousel CSS -->
@@ -43,10 +50,6 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 	<!-- responsive CSS -->
 	<link rel="stylesheet" href="assets/css/responsive.css" type="text/css" media="all">
-
-	<script>
-		window.location = 'https://adiladev.github.io/portfolio/v1.0/';
-	</script>
 </head>
 <body>
 
@@ -64,20 +67,28 @@
 			<div class="col-lg-12">
 				<div id="sticky-header" class="nav-menu">
 					<div class="header-logo">
-						<a href="index.html"><img src="assets/images/techno-logo2.png" alt=""></a>
-						<a class="main_sticky" href="index.html"><img src="assets/images/techno-logo2.png" alt=""></a>
+						<a href="index.html"><img src="assets/images/MY_LOGO/favicon_AF_gold.png" alt=""></a>
+						<a class="main_sticky" href="index.html"><img src="assets/images/MY_LOGO/favicon_AF_gold.png" alt=""></a>
 					</div>
 					<div class="heder-menu">
 						<ul>
 							<li><a href="#home">home </a></li>
 							<li><a href="#about">about </a></li>
-							<li><a href="#service">services</a></li>			
+							<li><a href="#experience">experience</a></li>		
 							<li><a href="#portfolio">portfolio</a></li>		
-							<li><a href="#blog">blog</a></li>	
+							<li><a href="#skill">skill</a></li>	
 							<li><a href="#contact">contact</a></li>	
+							<li><a href="javascript:void(0);">Language <i class="fa fa-angle-down"></i></a>
+								<div class="sub-menu" style="right: 20px;">
+									<ul>
+										<li id="li_en" class="selectLanguage active" style="margin-right: 0px !important;"><a href="javascript:void(0);" onclick="changeLang('en')">English</a></li>
+										<li id="li_id" class="selectLanguage" style="margin-right: 0px !important;"><a href="javascript:void(0);" onclick="changeLang('id')">Indonesia</a></li>
+									</ul>
+								</div>
+							</li>		
 						</ul>
 					</div>
-					<div class="header-button">
+					<div class="header-button d-none">
 						<a href="#">Get A Quote</a>
 					</div>
 				</div>
@@ -94,10 +105,18 @@
 			<ul class="nav_scroll">
 				<li><a href="#home">home </a></li>
 				<li><a href="#about">about </a></li>
-				<li><a href="#service">services</a></li>			
+				<li><a href="#experience">experiences</a></li>			
 				<li><a href="#portfolio">portfolio</a></li>		
-				<li><a href="#blog">blog</a></li>	
+				<li><a href="#skill">skill</a></li>	
 				<li><a href="#contact">contact</a></li>	
+				<li><a href="javascript:void(0);">Language</a>
+					<div class="sub-menu">
+						<ul>
+							<li id="li_mobile_en" class="selectLanguage active" style="margin-right: 0px !important;"><a href="javascript:void(0);" onclick="changeLang('en')">English</a></li>
+							<li id="li_mobile_id" class="selectLanguage" style="margin-right: 0px !important;"><a href="javascript:void(0);" onclick="changeLang('id')">Indonesia</a></li>
+						</ul>
+					</div>
+				</li>
 			</ul>
 		</nav>
 	</div>
@@ -112,19 +131,41 @@
 			<div class="single-slider-box">
 				<div class="slider-content">
 					<div class="slider-title" data-cues="rotateIn">
-						<div class="slider-title">
-							<h2>Hi' I'm Sen Maxuale</h2>
-							<h1><br><span class="ityped"></span></h1>
+						<br>
+						<div class="slider-title" style="margin-top: 10rem;">
+							<!-- <img src="assets/images/profile_circle.png" alt="" width="250" height="100%" style="float: inline-start;"> -->
+							<h2 id="name">
+								Hi' I'm Achmad Fadilah
+							</h2>
+							<h1 ><br><span class="ityped"></span></h1>
 						</div>
-						<p>Hello i'm Sen Maxuale, wb designer and photography, public figure. welcome to my website, i am best photography and designer, I am happy with my work, you have any help please let me know</p>
+						<div class="profil-text">
+							<br>
+							<span id="deskripsi"></span>
+							<!-- <p style="margin-bottom: 20px; width: 100% !important;">
+								Hello! I am Achmad Fadilah, a <b>Programmer</b> with over <b>4 years</b> of experience in web development using <b>PHP</b> and the <b>CodeIgniter</b> framework. 
+							</p>
+							<p style="margin-top: 0px; width: 100% !important; margin-bottom: 20px;">I have a strong interest in <b>UI/UX Design</b> and have developed skills in 
+								<b>HTML5</b>, <b>CSS</b>, and <b>Figma</b> to create attractive and user-friendly interface designs. 
+								Currently, I am deepening my skills in <b>Node.js</b> and <b>Python</b> to become a proficient <b>Full-Stack Developer</b>.
+							</p> -->
+							<p id="my_sosmed" style="margin-top: 0px; width: 100% !important; margin-bottom: 10px;">My Social Media:</p>
+							
+						</div>
+
+						<!-- <p>Hello i'm Sen Maxuale, wb designer and photography, public figure. welcome to my website, i am best photography and designer, I am happy with my work, you have any help please let me know</p> -->
 					</div>
 				</div>
 				<div class="slider-icon" data-cues="rotateIn">
 					<ul>
-						<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-						<li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-						<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-						<li><a href="#"><i class="flaticon flaticon-instagram-logo"></i></a></li>
+						<li><a href="https://www.facebook.com/achmadfadiilah" class="icon-facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+						<li><a href="https://www.instagram.com/achmd.fadillah" class="icon-instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
+						<li><a href="https://linkedin.com/in/achmad-fadilah-217093171" class="icon-linkedin" target="_blank"><i class="fab fa-linkedin-square"></i></a></li>
+						<li><a href="https://github.com/adilaDev" class="icon-github" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+						<li><a href="mailto:achmadfadillah97@gmail.com" class="icon-email" target="_blank"><i class="fa fa-envelope"></i></a></li>
+						<li><a href="https://wa.me/6289672781297?text=Hallo%20saya%20mendapatkan%20nomor%20whatsapp%20anda%20dari%20portofolio.%0ABisakah%20kita%20berdiskusi%2C%20lebih%20lanjut%3F%0ANama%20Lengkap%20%3A%20.....%0AEmail%20%3A%20.....s" class="icon-whatsapp" target="_blank">
+							<i class="fab fa-whatsapp"></i></a></li>
+						<li><a href="tel:+6289672781297" class="icon-phone" target="_blank"><i class="fas fa-phone"></i></a></li>
 					</ul>
 				</div>
 			</div>
@@ -134,109 +175,6 @@
 </div>
 
 <!--==================================================-->
-<!-- Start service Area -->
-<!--==================================================-->
-<div class="service-area" id="service">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="section-title" data-cues="rotateIn">
-					<div class="sub-title">
-						<h5>WHAT I OFFER</h5>
-						<h3>MY SERVICES</h3>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row fjjhg">
-			<div class="col-lg-4 col-md-6">
-				<div class="single-service-box" data-cues="rotateIn">
-					<div class="service-icon">
-						<i class="flaticon flaticon-adjust"></i>
-					</div>
-					<div class="service-title">
-						<h2>Web Development</h2>
-						<p>Lorem ipsum dolor sit amet, tempere adipiscing elit, sed do eiusmod thast tempor incididunt labore.</p>
-					</div>
-					<div class="service-button">
-						<a href="#">Read more</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6">
-				<div class="single-service-box" data-cues="rotateIn">
-					<div class="service-icon">
-						<i class="flaticon flaticon-camera"></i>
-					</div>
-					<div class="service-title">
-						<h2>Photography</h2>
-						<p>Lorem ipsum dolor sit amet, tempere adipiscing elit, sed do eiusmod thast tempor incididunt labore.</p>
-					</div>
-					<div class="service-button">
-						<a href="#">Read more</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6">
-				<div class="single-service-box" data-cues="rotateIn">
-					<div class="service-icon">
-						<i class="flaticon flaticon-advertising"></i>
-					</div>
-					<div class="service-title">
-						<h2>CEO Marketing</h2>
-						<p>Lorem ipsum dolor sit amet, tempere adipiscing elit, sed do eiusmod thast tempor incididunt labore.</p>
-					</div>
-					<div class="service-button">
-						<a href="#">Read more</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6">
-				<div class="single-service-box" data-cues="rotateIn">
-					<div class="service-icon">
-						<i class="flaticon flaticon-analytics"></i>
-					</div>
-					<div class="service-title">
-						<h2>Website Design</h2>
-						<p>Lorem ipsum dolor sit amet, tempere adipiscing elit, sed do eiusmod thast tempor incididunt labore.</p>
-					</div>
-					<div class="service-button">
-						<a href="#">Read more</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6">
-				<div class="single-service-box" data-cues="rotateIn">
-					<div class="service-icon">
-						<i class="flaticon flaticon-money"></i>
-					</div>
-					<div class="service-title">
-						<h2>Mobile Apps</h2>
-						<p>Lorem ipsum dolor sit amet, tempere adipiscing elit, sed do eiusmod thast tempor incididunt labore.</p>
-					</div>
-					<div class="service-button">
-						<a href="#">Read more</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6">
-				<div class="single-service-box" data-cues="rotateIn">
-					<div class="service-icon">
-						<i class="flaticon flaticon-care"></i>
-					</div>
-					<div class="service-title">
-						<h2>Business Strategy</h2>
-						<p>Lorem ipsum dolor sit amet, tempere adipiscing elit, sed do eiusmod thast tempor incididunt labore.</p>
-					</div>
-					<div class="service-button">
-						<a href="#">Read more</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!--==================================================-->
 <!-- Start about-area Area -->
 <!--==================================================-->
 <div class="about-area" id="about">
@@ -245,7 +183,7 @@
 			<div class="col-lg-6">
 				<div class="about-single-box" data-cues="rotateIn">
 					<div class="about-thumb">
-						<img src="assets/images/about.png" alt="">
+						<img src="assets/images/profile_circle.png" alt="about me" style="margin-top: 5rem; width: 70%; text-align: center; position: relative; left: 10%;">
 					</div>
 				</div>
 			</div>
@@ -254,9 +192,25 @@
 					<div class="section-title" data-cues="rotateIn">
 						<div class="sub-title">
 							<h5>ABOUT ME</h5>
-							<h3>I'M SEN <span> MAXUALE</span></h3>
-							<h2><span>WEB </span> DESIGNER</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<h3>I'M <span> Achmad Fadilah</span></h3>
+							<h2><span>WEB </span> DEVELOPER</h2>
+							<p id="about_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+					</div>
+					<div class="main-icon-box" data-cues="rotateIn">
+						<div class="icon-box">
+							<i class="fa fa-user"></i>
+						</div> 
+						<div class="icon-title">
+							<h2>Fullname <span id="fullname">: Achmad</span></h2>
+						</div>
+					</div>
+					<div class="main-icon-box" data-cues="rotateIn">
+						<div class="icon-box">
+							<i class="fa fa-user-circle"></i>
+						</div> 
+						<div class="icon-title">
+							<h2>Nickname <span id="nickname">: Fadil</span></h2>
 						</div>
 					</div>
 					<div class="main-icon-box" data-cues="rotateIn">
@@ -264,7 +218,7 @@
 							<i class="flaticon flaticon-calendar"></i>
 						</div> 
 						<div class="icon-title">
-							<h2>Birthday <span>: 12-30-1992</span></h2>
+							<h2>Birthday &nbsp;&nbsp;<span id="birthday">: 12-30-1992</span></h2>
 						</div>
 					</div>
 					<div class="main-icon-box" data-cues="rotateIn">
@@ -272,7 +226,7 @@
 							<i class="flaticon flaticon-phone-call"></i>
 						</div> 
 						<div class="icon-title">
-							<h2>Number <span> : +880 24587 365</span></h2>
+							<h2>Number &nbsp;&nbsp;&nbsp;<span id="number"> : +880 24587 365</span></h2>
 						</div>
 					</div>
 					<div class="main-icon-box" data-cues="rotateIn">
@@ -280,19 +234,133 @@
 							<i class="flaticon flaticon-mail"></i>
 						</div> 
 						<div class="icon-title">
-							<h2>Email <span> : Example@gmail.com</span></h2>
-						</div>
-					</div>
-					<div class="main-icon-box" data-cues="rotateIn">
-						<div class="icon-box">
-							<i class="flaticon flaticon-calendar"></i>
-						</div> 
-						<div class="icon-title">
-							<h2>Website <span> : www.example.com</span></h2>
+							<h2>Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="email"> : achmadfadillah97gmail.com</span></h2>
 						</div>
 					</div>
 					<div class="about-button" data-cues="rotateIn">
-						<a href="#">Download CV	 <i class="fas fa-angle-right"></i></a>
+						<a href="#" id="download_cv" download>Download CV <i class="fas fa-angle-right"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--==================================================-->
+<!-- Start experience Area -->
+<!--==================================================-->
+<div class="service-area" id="experience">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="section-title" data-cues="rotateIn">
+					<div class="sub-title">
+						<h5>Storyboard</h5>
+						<h3>My Experience</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-md-6">
+				<div class="single-service-box" data-cues="rotateIn">
+					<div class="service-icon">
+						<i class="fa fa-building"></i>
+					</div>
+					<div class="service-title">
+						<h2 id="titleWork1">Web Development</h2>
+						<p id="dateWork1" class="mb-0">Lorem ipsum dolor sit amet, tempere adipiscing elit, sed do eiusmod thast tempor incididunt labore.</p>
+						<span id="contentWork1"></span>
+					</div>
+					<div class="service-button d-none">
+						<a href="#">Read more</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<div class="single-service-box" data-cues="rotateIn">
+					<div class="service-icon">
+						<i class="fa fa-building"></i>
+					</div>
+					<div class="service-title">
+						<h2 id="titleWork2">Photography</h2>
+						<p id="dateWork2" class="mb-0">Lorem ipsum dolor sit amet, tempere adipiscing elit, sed do eiusmod thast tempor incididunt labore.</p>
+						<span id="contentWork2"></span>
+					</div>
+					<div class="service-button d-none">
+						<a href="#">Read more</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<div class="single-service-box" data-cues="rotateIn">
+					<div class="service-icon">
+						<i class="fa fa-building"></i>
+					</div>
+					<div class="service-title">
+						<h2 id="titleWork3">CEO Marketing</h2>
+						<p id="dateWork3" class="mb-0">Lorem ipsum dolor sit amet, tempere adipiscing elit, sed do eiusmod thast tempor incididunt labore.</p>
+						<span id="contentWork3"></span>
+					</div>
+					<div class="service-button d-none">
+						<a href="#">Read more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="section-title" data-cues="rotateIn">
+					<div class="sub-title">
+						<h5>Storyboard</h5>
+						<h3>My School</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-md-6">
+				<div class="single-service-box" data-cues="rotateIn">
+					<div class="service-icon">
+						<i class="fa fa-graduation-cap"></i>
+					</div>
+					<div class="service-title">
+						<h2 id="titleSchool1">Website Design</h2>
+						<p id="dateSchool1" class="mb-0">Lorem ipsum dolor sit amet, tempere adipiscing elit, sed do eiusmod thast tempor incididunt labore.</p>
+						<span id="contentSchool1"></span>
+					</div>
+					<div class="service-button d-none">
+						<a href="#">Read more</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<div class="single-service-box" data-cues="rotateIn">
+					<div class="service-icon">
+						<i class="fa fa-graduation-cap"></i>
+					</div>
+					<div class="service-title">
+						<h2 id="titleSchool2">Mobile Apps</h2>
+						<p id="dateSchool2" class="mb-0">Lorem ipsum dolor sit amet, tempere adipiscing elit, sed do eiusmod thast tempor incididunt labore.</p>
+						<span id="contentSchool2"></span>
+					</div>
+					<div class="service-button d-none">
+						<a href="#">Read more</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<div class="single-service-box" data-cues="rotateIn">
+					<div class="service-icon">
+						<i class="fa fa-graduation-cap"></i>
+					</div>
+					<div class="service-title">
+						<h2 id="titleSchool3">Business Strategy</h2>
+						<p id="dateSchool3" class="mb-0">Lorem ipsum dolor sit amet, tempere adipiscing elit, sed do eiusmod thast tempor incididunt labore.</p>
+						<span id="contentSchool3"></span>
+					</div>
+					<div class="service-button d-none">
+						<a href="#">Read more</a>
 					</div>
 				</div>
 			</div>
@@ -312,7 +380,7 @@
 							<h3>My Portfolio</h3>
 						</div>
 					</div>
-				<div class="portfolio_nav text-center" data-cues="rotateIn">
+				<div class="portfolio_nav text-center d-none" data-cues="rotateIn">
 					<div class="portfolio_menu">
 						<ul class="menu-filtering">
 							<li class="current_menu_item" data-filter="*">all</li>
@@ -404,27 +472,22 @@
 			<div class="col-lg-12">
 				<div class="section-title" data-cues="rotateIn">
 					<div class="sub-title">
-						<h5>My SKILL</h5>
+						<h5>SKILL</h5>
 						<h3>My Skill</h3>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="row">
+		<div id="dynamic_skill" class="row"></div>
+		<div class="row d-none">
 			<div class="col-lg-6">
 				<div class="single-skill-box" data-cues="rotateIn">
-					<div class="skill-title">
-						<h2>Every Day is a New Challenge</h2>
-						<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable.</p>
-						<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden.</p>
+					<div class="section-title" data-cues="rotateIn">
+						<div class="sub-title">
+							<h3><i class="fas fa-code" style="margin-right: 10px;"></i></h3>
+							<h5>Backend Development</h5>
+						</div>
 					</div>
-					<div class="skil-button">
-						<a href="#">Read more <i class="fas fa-angle-right"></i></a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-6">
-				<div class="single-skill-box" data-cues="rotateIn">
 					<div class="col-lg-12 col-md-12 col-sm-12">
 						<div class="prossess-ber-plugin">
 							<span class="prosses-bar">Web Design</span>
@@ -466,13 +529,62 @@
 					</div>
 				</div>
 			</div>
+			<div class="col-lg-6">
+				<div class="single-skill-box" data-cues="rotateIn">
+					<div class="section-title" data-cues="rotateIn">
+						<div class="sub-title">
+							<h3><i class="fas fa-palette" style="margin-right: 10px;"></i></h3>
+							<h5>Frontend Development</h5>
+						</div>
+					</div>
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						<div class="prossess-ber-plugin">
+							<span class="prosses-bar">Web Design</span>
+							<div id="bar6" class="barfiller">
+								<div class="tipWrap">
+									<span class="tip"></span>
+								</div>
+								<span class="fill my-class" data-percentage="90"></span>
+							</div>
+							<span class="prosses-bar">Photoshoot</span>
+							<div id="bar7" class="barfiller">
+								<div class="tipWrap">
+									<span class="tip"></span>
+								</div>
+								<span class="fill my-class3" data-percentage="80"></span>
+							</div>
+							<span class="prosses-bar">Web Development</span>
+							<div id="bar8" class="barfiller">
+								<div class="tipWrap">
+									<span class="tip"></span>
+								</div>
+								<span class="fill my-class3" data-percentage="87"></span>
+							</div>
+							<span class="prosses-bar">Time Management</span>
+							<div id="bar9" class="barfiller">
+								<div class="tipWrap">
+									<span class="tip"></span>
+								</div>
+								<span class="fill my-class3" data-percentage="78"></span>
+							</div>
+							<span class="prosses-bar">Coding</span>
+							<div id="bar10" class="barfiller">
+								<div class="tipWrap">
+									<span class="tip"></span>
+								</div>
+								<span class="fill my-class3" data-percentage="71"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
 <!--==================================================-->
 <!-- Start testimonial Area -->
 <!--==================================================-->
-<div class="testimonial-area">
+<div class="testimonial-area d-none">
 	<div class="container">
 		<div class="row">
 			<div class="section-title" data-cues="rotateIn">
@@ -544,7 +656,7 @@
 <!--==================================================-->
 <!-- Start blog Area -->
 <!--==================================================-->
-<div class="blog-area" id="blog">
+<div class="blog-area d-none" id="blog">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
@@ -657,77 +769,54 @@
 					<div class="sub-title">
 						<h5>CONTACT US</h5>
 						<h3><span>Feel </span>Free To Of Contacts</h3>
-						<h2>With Our IT <span>Agency</span></h2>
+						<h2>With <span>Me</span></h2>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-lg-6">
-				<div class="single-contact-box" data-cues="rotateIn">
-					<div class="contact-title">
-						<h2>Company Address</h2>
-						<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,</p>
-					</div>
-					<div class="icon-box">
-						<div class="contact-icon">
-							<i class="flaticon flaticon-placeholder-1"></i>
-						</div>
-						<div class="icon-box-content">
-							<h2>Office Address</h2>
-							<span>Office Address 56/A-102-Middle Point,New York, US</span>
-						</div>
-					</div>
-					<div class="icon-box">
-						<div class="contact-icon">
-							<i class="flaticon flaticon-email"></i>
-						</div>
-						<div class="icon-box-content">
-							<h2>Email Address</h2>
-							<span>example@gmail.com</span>
-						</div>
-					</div>
-					<div class="icon-box">
-						<div class="contact-icon">
-							<i class="flaticon flaticon-call"></i>
-						</div>
-						<div class="icon-box-content">
-							<h2>Phone Number</h2>
-							<span>088 0245 35487</span>
-						</div>
-					</div>
-				</div>
+				<!-- Table to display data -->
+				<h3 class="text-white">Data from Google Sheets</h3>
+				<table id="sheetDataTable" class="table table-responsive text-white">
+					<thead>
+						<tr class="text-white">
+							<th>Name</th>
+							<th>Phone</th>
+							<th>Email</th>
+							<th>Message</th>
+							<th>Created Date</th>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
 			</div>
 			<div class="col-lg-6">
 				<div class="single-contact-box upper" data-cues="rotateIn">
 					<div class="contact-title">
 						<h3>Contact Us</h3>
 					</div>
-					<form action="https://formspree.io/f/myyleorq" method="POST" id="dreamit-form">
+					<form action="#" method="POST" id="contact-form">
 						<div class="row">
 							<div class="col-lg-6">
 								<div class="form_box">
-									<input type="text" name="name" placeholder="Name">
+									<input type="text" name="name" id="form-name" placeholder="Name" value="Achmad Fadilah" required>
 								</div>
 							</div>
 							<div class="col-lg-6">
 								<div class="form_box">
-									<input type="text" name="email" placeholder="Email">
+									<input type="text" name="phone" id="form-phone" placeholder="Phone" value="+6289672781297" required>
 								</div>
 							</div>
-							<div class="col-lg-6">
+							<div class="col-lg-12">
 								<div class="form_box">
-									<input type="text" name="Phone" placeholder="Phone">
-								</div>
-							</div>
-							<div class="col-lg-6">
-								<div class="form_box">
-									<input type="text" name="Website" placeholder="Website">
+									<input type="text" name="email" id="form-email" placeholder="Email" value="achmadfadillah97@gmail.com" required>
 								</div>
 							</div>
 							<div class="col-lg-12 col-md-12">
 								<div class="form_box">
-									<textarea name="massage" id="massage" cols="30" rows="10" placeholder="Your Massage"></textarea>
+									<textarea name="message" id="form-message" required cols="30" rows="10" placeholder="Your Massage">Hallo ini demo pertama saya</textarea>
 								</div>
 								<div class="form-button">
 									<button type="submit">Send Message</button>
@@ -750,17 +839,21 @@
 			<div class="col-lg-12">
 				<div class="footer-single-box" data-cues="rotateIn">
 					<div class="footer-logo">
-						<img src="assets/images/techno-logo2.png" alt="">
+						<img src="assets/images/MY_LOGO/AF_navbar_gold.png" alt="">
 					</div>
-					<div class="footer-text">
+					<div class="footer-text d-none">
 						<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,</p>
 					</div>
 					<div class="footer-icon">
 						<ul>
-							<li><a href="#"><i class="fab fa-facebook"></i></a></li>
-							<li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-							<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-							<li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+							<li><a href="https://www.instagram.com/achmadfadillah" target="_blank" class="icon-facebook"><i class="fab fa-facebook"></i></a></li>
+							<li><a href="https://www.instagram.com/achmd.fadillah" target="_blank" class="icon-instagram"><i class="fa-brands fa-instagram"></i></a></li>
+							<li><a href="https://linkedin.com/in/achmad-fadilah-217093171" target="_blank" class="icon-linkedin"><i class="fab fa-linkedin-square"></i></a></li>
+							<li><a href="https://github.com/adilaDev" target="_blank" class="icon-github"><i class="fab fa-github"></i></a></li>
+							<li><a href="mailto:achmadfadillah97@gmail.com" target="_blank" class="icon-email"><i class="fas fa-envelope"></i></a></li>
+							<li><a href="https://wa.me/6289672781297?text=Hallo%20saya%20mendapatkan%20nomor%20whatsapp%20anda%20dari%20portofolio.%0ABisakah%20kita%20berdiskusi%2C%20lebih%20lanjut%3F%0ANama%20Lengkap%20%3A%20.....%0AEmail%20%3A%20.....s" class="icon-whatsapp" target="_blank">
+							<i class="fab fa-whatsapp"></i></a></li>
+							<li><a href="tel:+6289672781297" target="_blank" class="icon-phone"><i class="fas fa-phone"></i></a></li>
 						</ul>
 					</div>
 				</div>
@@ -770,7 +863,7 @@
 			<div class="col-lg-12">
 				<div class="copy-right-area" data-cues="rotateIn">
 					<div class="copy-right-text">
-						<h4>Copyright @2024 All Right Reserved By <a href="#">Dream-IT</a></h4>
+						<h4>Copyright @2024 All Right Reserved</h4>
 					</div>
 				</div>
 			</div>
@@ -813,7 +906,7 @@
 	<!-- venobox js -->
 	<script src="venobox/venobox.js"></script>
 	<!-- ajax mail js -->
-	<script src="assets/js/ajax-mail.js"></script>
+	<!-- <script src="assets/js/ajax-mail.js"></script> -->
 	<!--  animated-text js -->	
 	<script src="assets/js/animated-text.js"></script>
 	<!-- venobox min js -->
@@ -827,7 +920,7 @@
 	<script src="assets/js/popper.min.js"></script>
 	<!-- jquery scrollup js -->	
 	<script src="assets/js/jquery.scrollUp.js"></script>
-	<!-- theme js -->	
+	<!-- theme js -->
 	<script src="assets/js/theme.js"></script>
 	<script src="assets/js/jquery.barfiller.js"></script>
 
@@ -835,51 +928,171 @@
 	<!-- modernizr js -->	
 	<script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
 	<script src="https://unpkg.com/ityped@0.0.10"></script>
-       <script>
-            window.ityped.init(document.querySelector('.ityped'),{
-                strings: ['WEB DESIGNE RPUBLIC ', 'FIGUREPHOTOGRAPHY ',],
-                loop: true
-            })
-        </script> 
-
-		<!-- jquery js -->
+	<script>
+		window.ityped.init(document.querySelector('.ityped'),{
+			strings: ['WEB DEVELOPER ', 'FULL-STACK DEVELOPER ', 'BACKEND DEVELOPER '],
+			loop: true
+		})
+	</script> 
 	
+    <!-- Loading datatables, a JS library from the CDN -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+	<!-- handle form contact us -->
+	<script>
+		// Initialize DataTable
+		var table = $('#sheetDataTable').DataTable();
 
+		// Get data from Google Sheets and populate DataTable
+		async function getData() {
+			const URL_web_v1 = "https://script.google.com/macros/s/AKfycby7_0R7h17r9r60svbi2UIaRGgfZbphigbO6QpRhOCV0O7sN1zFGNnh9u58HSuWIv8u/exec";
+			const URL_web_v2 = "https://script.google.com/macros/s/AKfycbwTOw-fO7riTMvMeCdtGrub8Xol19T_y5AE0o5tsoVLyW6QRv4ULTO4D-x9E6Fbhj0P/exec";
+			const URL_deploy = "https://script.googleusercontent.com/macros/echo?user_content_key=-Bkec5YfSxp_NFurqi0aP-PiX-Ubmb-h6fAkhf360oK5_Yf15H4W6SaS3x1174BpxBLR2H5NCf7Cf1FjyiJuTSSpc85krF1em5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnHtghd2u_Kegf8V-JjpLCSIWxP4aR8TfNDi4_3_m3iJqsHPbbYzQm5SndPWNUyxT9g&lib=MHKUZKvFxQtAWVXoiQK4soz3PtiT7y5tZ";
+			
+			const response = await fetch(URL_web_v2+"?action=getData", {
+				method: 'GET',
+				mode: 'no-cors', // Mengatasi masalah CORS origin
+			});
+			console.log("getData: ", response);
+			/* $.ajax({
+				url: `${URL_web_v2}?action=getData`,
+				method: 'GET',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				success: function (response) {
+					var data = response.data;
+					table.clear().draw(); // Clear existing table data
 
+					data.forEach(function (row) {
+						table.row.add([
+							row.name,
+							row.phone,
+							row.email,
+							row.message,
+							row.created_date
+						]).draw();
+					});
+				},
+				error: function (error) {
+					console.log("Error done data:", error.done());
+					console.log("Error fail data:", error.getAllResponseHeaders());
+					console.log("Error text data:", error.statusText);
+					console.error("Error fetching data:", error);
+					error.then(function (data, status, xhr){
+						console.log("Errors data:", data, status, xhr);
+						
+					})
+				}
+			}); */
+		}
 
-<script>
-$(document).ready(function(){
+		// Initial fetch of data
+		getData();
+		
+		document.getElementById('contact-form').addEventListener('submit', async function(e) {
+			e.preventDefault(); // Mencegah reload halaman
 
-$('.aa').counterUp({
-    delay: 10,
-    time: 1000
-});
+			const ID_Penerapan = "AKfycby7_0R7h17r9r60svbi2UIaRGgfZbphigbO6QpRhOCV0O7sN1zFGNnh9u58HSuWIv8u";
+			const URL_web_v1 = "https://script.google.com/macros/s/AKfycby7_0R7h17r9r60svbi2UIaRGgfZbphigbO6QpRhOCV0O7sN1zFGNnh9u58HSuWIv8u/exec";
+			const URL_web_v2 = "https://script.google.com/macros/s/AKfycbwTOw-fO7riTMvMeCdtGrub8Xol19T_y5AE0o5tsoVLyW6QRv4ULTO4D-x9E6Fbhj0P/exec";
+			const URL_library = "https://script.google.com/macros/library/d/1NRoHdj1iwgFD2ChmyxRzALu0BAoPE_1GPjGM5u6wMVWxmDNrMueGTy9x/1";
+			const URL_demo = "https://script.google.com/macros/s/AKfycbyT7HZtRIQNDG9nDBqXh0WkBbzMpJM27GICU196SzM/dev";
 
+			var name = document.querySelector('input[name="name"]').value;
+			var phone = document.querySelector('input[name="phone"]').value;
+			var email = document.querySelector('input[name="email"]').value;
+			var message = document.querySelector('textarea[name="message"]').value;
+			
+			// Kirim data melalui fetch ke Google Apps Script
+			var formData = new URLSearchParams();
+			formData.append('name', name);
+			formData.append('phone', phone);
+			formData.append('email', email);
+			formData.append('message', message);
+			
+			// var formData = new FormData(this);
+			console.log("formData: ", formData.toString());
 
-});
-</script>
+			try {
+				const response = await fetch(URL_web_v2+"?action=doPost", {
+					method: 'POST',
+					mode: 'no-cors', // Mengatasi masalah CORS origin
+					body: formData
+				});
+				console.log("dataContact: ", response);
+
+				
+				if (response.ok) {
+					document.getElementById('status').textContent = 'Pesan berhasil dikirim.';
+				} else {
+					document.getElementById('status').textContent = 'Terjadi kesalahan, silakan coba lagi.';
+				}
+
+				setTimeout(() => {
+					document.getElementById('status').textContent = '';
+				}, 3000)
+			} catch (error) {
+				document.getElementById('status').textContent = 'Gagal mengirim data: ' + error.message;
+				setTimeout(() => {
+					document.getElementById('status').textContent = '';
+				}, 3000)
+			}
+
+			// Kirim data ke Google Apps Script
+			/*
+			fetch(URL_demo, {
+				method: 'POST',
+				mode: 'no-cors', // Mengatasi masalah CORS
+				body: formData
+			})
+			.then(response => response.text())
+			.then(data => {
+				console.log("dataContact: ", data);
+				document.getElementById('status').innerHTML = "Message Sent Successfully!";
+			})
+			.catch(error => {
+				document.getElementById('status').innerHTML = "Error sending message.";
+				console.error('Error:', error);
+			});
+			*/
+		});
+	</script>
+
+	<!-- load dynamic content -->
+	<script src="assets/js/app.js"></script>
+
+	<!-- jquery js -->
+	<script>
+		$(document).ready(function(){
+			$('.aa').counterUp({
+				delay: 10,
+				time: 1000
+			});
+		});
+	</script>
 
 	<script>
 		(function($) {
-    $('.accordion > li:eq(0) a').addClass('active').next().slideDown();
+			$('.accordion > li:eq(0) a').addClass('active').next().slideDown();
 
-    $('.accordion a').click(function(j) {
-        var dropDown = $(this).closest('li').find('p');
+			$('.accordion a').click(function(j) {
+				var dropDown = $(this).closest('li').find('p');
 
-        $(this).closest('.accordion').find('p').not(dropDown).slideUp();
+				$(this).closest('.accordion').find('p').not(dropDown).slideUp();
 
-        if ($(this).hasClass('active')) {
-            $(this).removeClass('active');
-        } else {
-            $(this).closest('.accordion').find('a.active').removeClass('active');
-            $(this).addClass('active');
-        }
+				if ($(this).hasClass('active')) {
+					$(this).removeClass('active');
+				} else {
+					$(this).closest('.accordion').find('a.active').removeClass('active');
+					$(this).addClass('active');
+				}
 
-        dropDown.stop(false, true).slideToggle();
+				dropDown.stop(false, true).slideToggle();
 
-        j.preventDefault();
-    });
-})(jQuery);
+				j.preventDefault();
+			});
+		})(jQuery);
 	</script>
 	
 </body>

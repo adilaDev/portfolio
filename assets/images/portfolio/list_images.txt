@@ -1,0 +1,102 @@
+==============================================================================
+Images Slider Dummy
+==============================================================================
+"img_slider": ["assets/images/ARI.png", "assets/images/blog1.jpg", "assets/images/blog4.jpg", "assets/images/blog5.jpg"],
+==============================================================================
+
+
+==============================================================================
+Images Slider for ResouSmart
+==============================================================================
+[   
+    "assets/images/portfolio/resousmart/resousmart-0.png", "assets/images/portfolio/resousmart/resousmart-1.png", 
+    "assets/images/portfolio/resousmart/resousmart-1-1.png", "assets/images/portfolio/resousmart/resousmart-1-2.png", 
+    "assets/images/portfolio/resousmart/resousmart-2.png", "assets/images/portfolio/resousmart/resousmart-2-1.png", 
+    "assets/images/portfolio/resousmart/resousmart-3.png", "assets/images/portfolio/resousmart/resousmart-3-1.png", 
+    "assets/images/portfolio/resousmart/resousmart-4.png", "assets/images/portfolio/resousmart/resousmart-4-1.png", 
+    "assets/images/portfolio/resousmart/resousmart-5.png", "assets/images/portfolio/resousmart/resousmart-5-1.png", 
+    "assets/images/portfolio/resousmart/resousmart-5-2.png"
+]
+==============================================================================
+
+
+==============================================================================
+Images Slider for ShowBiz
+==============================================================================
+[   
+    "assets/images/portfolio/showbiz/showbiz-0.png", "assets/images/portfolio/showbiz/showbiz-1.png", 
+    "assets/images/portfolio/showbiz/showbiz-2.png", "assets/images/portfolio/showbiz/showbiz-3.png", 
+    "assets/images/portfolio/showbiz/showbiz-4.png", "assets/images/portfolio/showbiz/showbiz-5.png", 
+    "assets/images/portfolio/showbiz/showbiz-6.png"
+]
+==============================================================================
+
+
+==============================================================================
+Images Slider for Location Tech
+==============================================================================
+[   
+    "assets/images/portfolio/LT/lt-0.png", "assets/images/portfolio/LT/lt-1.png", 
+    "assets/images/portfolio/LT/lt-2.png", "assets/images/portfolio/LT/lt-3.png", 
+    "assets/images/portfolio/LT/lt-4.png", "assets/images/portfolio/LT/lt-4-1.png", 
+    "assets/images/portfolio/LT/lt-4-2.png", "assets/images/portfolio/LT/lt-4-3.png"
+]
+==============================================================================
+
+
+==============================================================================
+Images Slider for RA (Rokesuma Alternative) Web
+==============================================================================
+[   
+    "assets/images/portfolio/ra_web/ra-0.png", "assets/images/portfolio/ra_web/ra-1.png", 
+    "assets/images/portfolio/ra_web/ra-2.png", "assets/images/portfolio/ra_web/ra-2-1.png", 
+    "assets/images/portfolio/ra_web/ra-2-2.png", "assets/images/portfolio/ra_web/ra-3.png", 
+    "assets/images/portfolio/ra_web/ra-3-1.png", "assets/images/portfolio/ra_web/ra-3-2.png", 
+    "assets/images/portfolio/ra_web/ra-4.png", "assets/images/portfolio/ra_web/ra-5.png", 
+    "assets/images/portfolio/ra_web/ra-6.png", "assets/images/portfolio/ra_web/ra-6-1.png"
+]
+==============================================================================
+
+
+==============================================================================
+Images Slider for Compare Web
+==============================================================================
+[   
+    "assets/images/portfolio/compare/compare-0.png", "assets/images/portfolio/compare/compare-1.png", 
+    "assets/images/portfolio/compare/compare-2.png", "assets/images/portfolio/compare/compare-2-1.png", 
+    "assets/images/portfolio/compare/compare-3.png", "assets/images/portfolio/compare/compare-4.png", 
+    "assets/images/portfolio/compare/compare-4-1.png", "assets/images/portfolio/compare/compare-5.png"
+]
+==============================================================================
+
+
+==============================================================================
+Images Slider for CTP Web
+==============================================================================
+[   
+    "assets/images/portfolio/CTP/ctp-0.png", "assets/images/portfolio/CTP/ctp-1.png", 
+    "assets/images/portfolio/CTP/ctp-2.png", "assets/images/portfolio/CTP/ctp-3.png", 
+    "assets/images/portfolio/CTP/ctp-3-1.png", "assets/images/portfolio/CTP/ctp-3-2.png", 
+    "assets/images/portfolio/CTP/ctp-3-3.png"
+]
+==============================================================================
+
+
+==============================================================================
+Images Slider for Gift Web
+==============================================================================
+[   
+    "assets/images/portfolio/gift/gift-0.png", "assets/images/portfolio/gift/gift-1.png", 
+    "assets/images/portfolio/gift/gift-2.png"
+]
+==============================================================================
+
+
+==============================================================================
+Images Slider for Harga Pedia
+==============================================================================
+[   
+    "assets/images/portfolio/hargapedia/hargapedia-1.png", "assets/images/portfolio/hargapedia/hargapedia-2.png",
+    "assets/images/portfolio/hargapedia/hargapedia-3.png"
+]
+==============================================================================
