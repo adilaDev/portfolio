@@ -954,7 +954,7 @@
 				mode: 'no-cors', // Mengatasi masalah CORS origin
 			});
 			console.log("getData: ", response);
-			/* $.ajax({
+			$.ajax({
 				url: `${URL_web_v2}?action=getData`,
 				method: 'GET',
 				headers: {
@@ -984,7 +984,7 @@
 						
 					})
 				}
-			}); */
+			});
 		}
 
 		// Initial fetch of data
