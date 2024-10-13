@@ -405,7 +405,7 @@
 			_cacheData.forEach((item, index) => {
 				var no = index+1;
 				var isActive = (currentIndex == index) ? "active" : "";
-				var url_page = `http://127.0.0.1:3000/portfolio-details.html?project=${item.project_name}`;
+				var url_page = `portfolio-details.html?project=${item.project_name}`;
 				aPage += `<li class="page-item ${isActive}"><a class="page-link" href="${url_page}">${no}</a></li>`;
 			});
 			ulPagination.append(aPage);
@@ -466,7 +466,7 @@
 			if (index >= 0 && index < projects.length) {
 				const nextProject = projects[index].project_name;
 				// Redirect ke halaman yang sesuai dengan project_name di query parameter
-				window.location.href = `http://127.0.0.1:3000/portfolio-details.html?project=${nextProject}`;
+				window.location.href = `portfolio-details.html?project=${nextProject}`;
 			}
 		}
 

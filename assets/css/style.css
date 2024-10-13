@@ -2441,6 +2441,51 @@ ul.sub-menu li a:hover {
   opacity: 0;
 }
 
+.text-truncate {
+  max-width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dataTables_wrapper .dataTables_filter input,
+.dataTables_wrapper .dataTables_length select{
+  color: white;
+}
+
+.btn-primary, 
+.bg-primary {
+  color: #fff;
+  background-color: #ffb400;
+  border-color: #ffb400;
+}
+.btn-primary:hover,
+.btn-primary:not(:disabled):not(.disabled):active {
+  color: #fff;
+  background-color: #df9d00;
+  border-color: #df9d00;
+}
+.btn-primary.focus, .btn-primary:focus {
+  color: #fff;
+  background-color: #ffb400;
+  border-color: #ffb400;
+  box-shadow: 0 0 0 .2rem rgb(223 157 0 / 50%);
+}
+
+/* .dataTables_wrapper .dataTables_paginate .paginate_button{
+  background: aliceblue;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, 
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover{
+  background: linear-gradient(to bottom, rgb(255 255 255) 0%, rgb(121 121 121) 100%) !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active{
+  background: #c5c5c5 !important;
+  background: linear-gradient(to bottom, rgb(193 193 193 / 70%) 0%, rgb(255 255 255 / 70%) 100%) !important;
+  color: #8d8d8d !important;
+} */
+
 /* Timeline Vertical */
 .timeline-vertical {
     position: relative;

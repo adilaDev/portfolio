@@ -71,11 +71,11 @@
                     "persentase": 90
                 },
                 {
-                    "nama": "MongoDB",
-                    "persentase": 10
+                    "nama": "PostgreSQL",
+                    "persentase": 0
                 },
                 {
-                    "nama": "PostgreSQL",
+                    "nama": "MongoDB",
                     "persentase": 0
                 }
             ]
@@ -152,7 +152,7 @@
             "items": [
                 {
                     "nama": "Chart.js",
-                    "persentase": 90
+                    "persentase": 100
                 },
                 {
                     "nama": "Highcharts",
@@ -177,11 +177,11 @@
             "icon": "fa fa-globe",
             "items": [
                 {
-                    "nama": "REST",
-                    "persentase": 80
+                    "nama": "Postman",
+                    "persentase": 90
                 },
                 {
-                    "nama": "Postman",
+                    "nama": "REST",
                     "persentase": 80
                 },
                 {
