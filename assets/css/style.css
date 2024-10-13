@@ -739,6 +739,12 @@ li.current_menu_item {
 .portfolio_menu ul li:hover {
   background: #ffb500;
 }
+#description > p > a {
+  color: #ff9800;
+}
+#description > p > a:hover {
+  color: #b26a00;
+}
 /*<!-- ============================================================== -->
 <!-- Start  map-area  Css -->
 <!-- ============================================================== -->*/
@@ -1839,6 +1845,7 @@ a.text-primary:hover {
   color: #ffffff;
   background-color: #ff9800;
   border: 1px solid #000000;
+  font-weight: 700;
 }
 .page-item.disabled .page-link {
   color: #b2b2b2;
@@ -1855,7 +1862,7 @@ a.text-primary:hover {
   color: #ffffff;
   background-color: #ffcc81;
   border-color: #000000;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .carousel-indicators li {

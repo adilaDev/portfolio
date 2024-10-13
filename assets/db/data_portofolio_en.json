@@ -334,8 +334,6 @@
                 "assets/images/portfolio/LT/lt-2.png",
                 "assets/images/portfolio/LT/lt-3.png",
                 "assets/images/portfolio/LT/lt-4.png",
-                "assets/images/portfolio/LT/lt-4-1.png",
-                "assets/images/portfolio/LT/lt-4-2.png",
                 "assets/images/portfolio/LT/lt-4-3.png"
             ],
             "project_name": "Location Technology",
@@ -405,6 +403,27 @@
             "last_update": "2024-09-30 19:31:13"
         },
         {
+            "no_urut": "22",
+            "images": "assets/images/portfolio/request_task/req_1.png",
+            "img_slider": [
+                "assets/images/portfolio/request_task/req_0.png",
+                "assets/images/portfolio/request_task/req_1.png",
+                "assets/images/portfolio/request_task/req_2.png",
+                "assets/images/portfolio/request_task/req_3.png"
+            ],
+            "project_name": "Requesting Task Website",
+            "keterangan": "<h3>Requesting Task Website</h3><p>Develop a web-based task request management system using CodeIgniter (PHP framework), where users can request tasks from a central platform.</p><p>The system will automate the task assignment and approval process, tracking tasks from submission to completion. The platform will integrate with Microsoft Teams via workflows, enabling real-time task notifications.</p>",
+            "framework": "Codeigniter 3",
+            "start_date": "2024-04-01",
+            "end_date": "2024-05-20",
+            "status": "Finished",
+            "category": "Internal Project",
+            "team": "Fadil (IT Division), Satria (IT Division)",
+            "link": "https://reqcleaning.asiaresearchinstitute.com/",
+            "path": "reqcleaning",
+            "last_update": "2024-09-30 19:31:13"
+        },
+        {
             "no_urut": "4",
             "images": "assets/images/portfolio/CTP/ctp-1.png",
             "img_slider": [
@@ -432,8 +451,8 @@
             "no_urut": "1",
             "images": "assets/images/portfolio/gift/gift-1.png",
             "img_slider": ["assets/images/portfolio/gift/gift-0.png", "assets/images/portfolio/gift/gift-1.png", "assets/images/portfolio/gift/gift-2.png"],
-            "project_name": "Gift Web app",
-            "keterangan": "<h3>Gift Web App</h3><p>The Gift Web App was developed specifically for survey events at Aeon Mall. This app provides a unique experience for users who participated in the survey by offering gift exchanges via QR code scanning.</p><p><strong>Usage:</strong> This app is designed to make it easy for survey participants to redeem their gifts digitally, enhancing interaction between users and survey organizers.</p><p>The Gift Web App uses modern technology to ensure a secure and efficient gift redemption process.</p>",
+            "project_name": "Gift Website",
+            "keterangan": "<h3>Gift Website</h3><p>Develop a web-based platform that integrates with barcode scanning devices to enable users to scan barcodes and input corresponding gift codes for redemption. The platform will automatically process the gift codes, validate them, and redeem rewards based on predefined criteria.</p><p>Additionally, the project will include a robust admin dashboard built using CodeIgniter (PHP framework), where administrators can manage gift codes, users, redemption history, and other important settings.</p>",
             "framework": "Codeigniter 3",
             "start_date": "2021-03-01",
             "end_date": "2021-03-31",
