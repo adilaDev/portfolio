@@ -195,10 +195,10 @@
 							<li><strong>Status Project :</strong> <span id="status">Finished</span></li>
 							<li><strong>Team :</strong> <span id="team">Photoshop / Illustrator</span></li>
 							<li><strong>Frameworks :</strong> <span id="framework">Photoshop / Illustrator</span></li>
-							<li class="not"><strong>Link Project :</strong> <a id="link" class="text-primary" href="javascript:void(0)" target="_blank"></a></li>
+							<li class="not"><strong>Link Project :</strong> <a id="link" class="" style="padding: 0px 8px; font-weight: 700;" href="javascript:void(0)" target="_blank"></a></li>
 						</ul>
 					</div>
-					<div class="portfolio-icon">
+					<div class="portfolio-icon d-none">
 						<div class="portfolio-share">
 							<h3>Share:</h3>
 						</div>
@@ -334,6 +334,7 @@
 	<script>
 		let _cacheData = [];
 		let currentIndex = 0;
+		let currentLang = "en";
 		// Data proyek dari JSON
 		let projects = [
 			{ "project_name": "ResouSmart" },
@@ -355,6 +356,7 @@
 		function changeLang(lang) {
 			const selectLang = $(".selectLanguage");
 			selectLang.toggleClass("active");
+			currentLang = lang;
 
 			console.clear();
 			// console.log("onChange: ", lang);
@@ -369,26 +371,27 @@
 			// Ambil nilai dari parameter 'project'
 			const currentProject = urlParams.get('project');
 			
-			console.log("urlParams: ", urlParams);
-			console.log("currentProject: ", currentProject);
-			console.log("_cacheData: ", _cacheData);
+			// console.log("urlParams: ", urlParams);
+			// console.log("currentProject: ", currentProject);
+			// console.log("_cacheData: ", _cacheData);
 
 			// console.log("projects: ", projects);
 			// console.log("transformDataToProjects: ", projects);
 			
 			if (_cacheData.length > 0) {
 				var filterData = getFilterData("project_name", currentProject, _cacheData);
-				console.log("filterData: ", filterData);
+				// console.log("filterData: ", filterData);
 				changeContent(filterData);
 
 				projects = transformDataToProjects(_cacheData);
-				<!-- dataSlider = _cacheData[currentIndex]; -->
+				// dataSlider = _cacheData[currentIndex];
 				dataSlider = filterData[0];
 
-				console.log("dataSlider: ", dataSlider);
+				// console.log("projects: ", projects);
+				// console.log("dataSlider: ", dataSlider);
 				// Cari indeks dari proyek saat ini di dalam data JSON
 				currentIndex = projects.findIndex(item => item.project_name === currentProject);
-				console.log("currentIndex: ", currentIndex, projects[currentIndex].project_name);
+				// console.log("currentIndex: ", currentIndex, projects[currentIndex].project_name);
 	
 				createPagination();
 				
@@ -508,26 +511,38 @@
 					const project_name = item.project_name;
 					const category = item.category;
 					const framework = item.framework;
+					const list_framework = framework.split(",");
 					const keterangan = item.keterangan;
 					const start_date = item.start_date;
 					const end_date = item.end_date;
 					const status = item.status;
 					const link = item.link;
 					const team = item.team;
+					const listTeam = team.split(",");
 					const calculate = calculateDateRangeInDetail(start_date, end_date);
+					const formatStartDate = convertDate(start_date, currentLang);
+					const formatEndDate = convertDate(end_date, currentLang);
 
 					// ubah konten
 					allEl.img.setAttribute("src", images);
 					allEl.category.innerText = category;
-					allEl.startDate.innerText = (end_date == "") ?  start_date + " until N/A" :  start_date+" until "+end_date;
+					allEl.startDate.innerText = (end_date == "") ?  formatStartDate + " - N/A" :  formatStartDate+" - "+formatEndDate;
 					allEl.endDate.innerText = calculate.result;
-					allEl.status.innerText = status;
-					allEl.framework.innerText = framework;
+					var badgeStatus = (status == 'Finished' || status == 'Selesai') ? 'badge badge-pill badge-success' : 'badge badge-pill badge-danger';
+					allEl.status.innerHTML = `<span class="${badgeStatus}" style="margin-right: 0.5rem;">${status}</span>`;
+					allEl.framework.innerHTML = ""; // reset html
+					list_framework.forEach((frame) => {
+						allEl.framework.innerHTML += `<span class="badge badge-pill badge-warning" style="margin-right: 0.5rem;">${frame}</span>`;
+					});
 					if(link != ""){
 						allEl.link.setAttribute('href', link);
-						allEl.link.innerText = link;
+						allEl.link.innerText = (currentLang == "en") ? "View demo" : "Lihat demo";
+						allEl.link.className = "btn btn-primary text-dark";
 					}
-					allEl.team.innerText = team;
+					allEl.team.innerHTML = ""; // reset html
+					listTeam.forEach((tim) => {
+						allEl.team.innerHTML += `<span class="badge badge-pill badge-warning" style="margin-right: 0.5rem;">${tim}</span>`;
+					});
 					allEl.keterangan.innerHTML = keterangan;
 
 					// khusus project name
@@ -536,7 +551,7 @@
 						name.innerText = project_name;
 					}
 
-					console.log("changeContent: ", item, index);
+					// console.log("changeContent: ", item, index);
 				});
 			}
 		}
@@ -596,6 +611,14 @@
 
 			// Trim spasi ekstra di akhir hasil
 			result = result.trim();
+			
+			// Jika currentLang adalah 'id', ubah hasil ke Bahasa Indonesia
+			if (currentLang === 'id') {
+				result = result
+					.replace(/\bYears?\b/, years > 1 ? 'Tahun' : 'Tahun')
+					.replace(/\bMonths?\b/, months > 1 ? 'Bulan' : 'Bulan')
+					.replace(/\bDays?\b/, days > 1 ? 'Hari' : 'Hari');
+			}
 
 			// Mengembalikan hasil dalam format tahun, bulan, hari, dan teks hasil
 			return {
@@ -606,6 +629,31 @@
 			};
 		}
 
+		function convertDate(date_str, lang_date = 'en'){
+			var date = new Date(date_str);
+			let formattedDate = "";
+
+			// Periksa apakah date valid
+			if (isNaN(date)) {
+				return "Invalid Date";
+			}
+
+			if (lang_date == "id") {
+				formattedDate = new Date(date_str).toLocaleDateString('id-ID', {
+					day: '2-digit',
+					month: 'short',
+					year: 'numeric'
+				});
+			} else if (lang_date == "en") {
+				formattedDate = new Date(date_str).toLocaleDateString('en-GB', {
+					day: '2-digit',
+					month: 'short',
+					year: 'numeric'
+				});
+			}
+			
+			return formattedDate;
+		}
 
 		function createImageSlider(img_slider) {
 			const carouselIndicators = document.querySelector(".carousel-indicators");
@@ -663,8 +711,8 @@
 
 			fetch(jsonFile).then(response => response.json())
 				.then(data => {
-					console.log("dataJSON", language,": ", data);
-					console.log("==============================");
+					// console.log("dataJSON", language,": ", data);
+					// console.log("==============================");
 					_cacheData = data.proyek;
 					getParams();
 				})
